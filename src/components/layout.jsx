@@ -7,6 +7,7 @@ function Layout({children}) {
             {children}
             <div className="right-sidebar" />
         </>
+      
     );
 }
 
