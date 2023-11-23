@@ -12,9 +12,6 @@ const Image = ({ src }) => {
     );
   };
 
-
-
-
 export default function TweetEditorForm(){
 
     return (
