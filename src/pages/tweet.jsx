@@ -6,10 +6,10 @@ import Vector3 from "../images/Vector3.png"
 
 
 
-export default function Tweet({Tweetavatar, authorName,authortag, imagebg}){
+export default function Tweet({Tweetavatar, authorName,authortag, imagebg, content, date}){
     return(
             <div className="tweet">
-                <img src={Tweetavatar} className="tweet-avatar"/>
+                <img src={"src/images/"+Tweetavatar} className="tweet-avatar"/>
                 <div className="tweet-content">
                     <div className="tweet-body">
                         <div className="tweet-title">
@@ -17,10 +17,10 @@ export default function Tweet({Tweetavatar, authorName,authortag, imagebg}){
                             <img src={Verified} />
                             <span className="tweet-title-details">{authortag}</span>
                             <span className="tweet-title-details">.</span>
-                            <span className="tweet-title-details">7min</span>
+                            <span className="tweet-title-details">{date}</span>
                         </div>
-                        <div className="tweet-text">President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a "major breakthrough" that would serve to both strengthen the US steel industry and combat the global climate crisis.</div>
-                        <div className="tweet-image">{imagebg}</div>
+                        <div className="tweet-text">{content}</div>
+                        <img src={"src/images/"+imagebg} className="tweet-image"/>
                     </div>
                     <div className="tweet-actions">
                         <div className="tweet-action">
