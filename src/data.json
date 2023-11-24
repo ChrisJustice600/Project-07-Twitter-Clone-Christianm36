@@ -19,5 +19,16 @@
             "content" : "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land.",
             "imagebg": "tweet-image.png"
         }
+        
+        ,
+        {
+            "id" : "3",
+            "imageavatar": "image 1.png",
+            "authorName" : "Tweeter",
+            "authortag" : "@tweeter",
+            "date" : "Oct 29",
+            "content" : "BIG NEWS lol jk still Twitter.",
+            "imagebg": ""
+        }
     ]
 }

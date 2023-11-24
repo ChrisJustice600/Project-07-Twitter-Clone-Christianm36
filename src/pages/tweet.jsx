@@ -21,7 +21,8 @@ export default function Tweet({ Tweetavatar, authorName, authortag, imagebg, con
                     </div>
                     <div className="tweet-text">{content}</div>
                     <div className="tweet-image">
-                        <img src={"src/images/" + imagebg} />
+                        {imagebg && <img src={"src/images/" + imagebg} />
+                        }
                     </div>
                 </div>
                 <div className="tweet-actions">
