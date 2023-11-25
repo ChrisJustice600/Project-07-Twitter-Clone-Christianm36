@@ -8,7 +8,10 @@
             "authortag" : "@CNN",
             "date" : "7min",
             "content" : "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
-            "imagebg": ""
+            "imagebg": "",
+            "action1": "19", 
+            "action2": "144",
+            "action3": "184"
         },
         {
             "id" : "2",
@@ -17,7 +20,10 @@
             "authortag" : "@nytimes",
             "date" : "2h",
             "content" : "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land.",
-            "imagebg": "tweet-image.png"
+            "imagebg": "tweet-image.png",
+            "action1": "", 
+            "action2": "",
+            "action3": ""
         }
         
         ,
@@ -28,7 +34,10 @@
             "authortag" : "@tweeter",
             "date" : "Oct 29",
             "content" : "BIG NEWS lol jk still Twitter.",
-            "imagebg": ""
+            "imagebg": "",
+            "action1": "", 
+            "action2": "",
+            "action3": ""
         }
     ]
 }

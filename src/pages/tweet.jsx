@@ -2,11 +2,11 @@ import Verified from "../images/Verified.png"
 import Reply from "../images/Reply.png"
 import Vector from "../images/Vector.png"
 import Vector2 from "../images/Vector2.png"
-import Vector3 from "../images/Vector3.png"
+import Vector3 from "../images/Group1.svg"
 
 
 
-export default function Tweet({ Tweetavatar, authorName, authortag, imagebg, content, date }) {
+export default function Tweet({ Tweetavatar, authorName, authortag, imagebg, content, date, action1, action2, action3 }) {
     return (
         <div className="tweet">
             <img src={"src/images/" + Tweetavatar} className="tweet-avatar" />
@@ -28,15 +28,15 @@ export default function Tweet({ Tweetavatar, authorName, authortag, imagebg, con
                 <div className="tweet-actions">
                     <div className="tweet-action">
                         <img src={Reply} />
-                        <span>19</span>
+                        <span>{action1}</span>
                     </div>
                     <div className="tweet-action">
                         <img src={Vector} />
-                        <span>144</span>
+                        <span>{action2}</span>
                     </div>
                     <div className="tweet-action">
                         <img src={Vector2} />
-                        <span>184</span>
+                        <span>{action3}</span>
                     </div>
                     <div className="tweet-action">
                         <img src={Vector3} />
