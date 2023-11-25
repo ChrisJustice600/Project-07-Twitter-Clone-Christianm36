@@ -1,43 +1,40 @@
-
 {
     "tweet": [
         {
-            "id" : "1",
+            "id": "1",
             "imageavatar": "tweet-profile-photo.png",
-            "authorName" : "CNN",
-            "authortag" : "@CNN",
-            "date" : "7min",
-            "content" : "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
+            "authorName": "CNN",
+            "authortag": "@CNN",
+            "date": "7min",
+            "content": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
             "imagebg": "",
-            "action1": "19", 
+            "action1": "19",
             "action2": "144",
             "action3": "184"
         },
         {
-            "id" : "2",
+            "id": "2",
             "imageavatar": "Profile-Photo-new-york.png",
-            "authorName" : "The New York Times",
-            "authortag" : "@nytimes",
-            "date" : "2h",
-            "content" : "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land.",
+            "authorName": "The New York Times",
+            "authortag": "@nytimes",
+            "date": "2h",
+            "content": "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land.",
             "imagebg": "tweet-image.png",
-            "action1": "", 
-            "action2": "",
-            "action3": ""
-        }
-        
-        ,
+            "action1": "60",
+            "action2": "245k",
+            "action3": "111"
+        },
         {
-            "id" : "3",
+            "id": "3",
             "imageavatar": "image 1.png",
-            "authorName" : "Tweeter",
-            "authortag" : "@tweeter",
-            "date" : "Oct 29",
-            "content" : "BIG NEWS lol jk still Twitter.",
+            "authorName": "Tweeter",
+            "authortag": "@tweeter",
+            "date": "Oct 29",
+            "content": "BIG NEWS lol jk still Twitter.",
             "imagebg": "",
-            "action1": "", 
-            "action2": "",
-            "action3": ""
+            "action1": "18",
+            "action2": "99",
+            "action3": "22"
         }
     ]
 }

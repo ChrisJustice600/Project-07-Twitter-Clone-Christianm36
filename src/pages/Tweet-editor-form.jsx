@@ -6,13 +6,13 @@ import Image5 from "../images/Schedule (1).svg";
 
 const Image = ({ src }) => {
     return (
-      <img
-        src={src}
-      />
+        <img
+            src={src}
+        />
     );
-  };
+};
 
-export default function TweetEditorForm(){
+export default function TweetEditorForm() {
 
     return (
         <div className="tweet-editor-form">
