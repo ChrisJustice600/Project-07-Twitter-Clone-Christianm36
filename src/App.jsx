@@ -3,6 +3,7 @@ import Layout from "./components/layout.jsx";
 
 import('./style/reset.css')
 import('./style/App.css')
+import('./style/sidestyle.css')
 
 export default function App() {
   return (
