@@ -19,7 +19,7 @@ body{
 
 .timeline {
     /* max-width: 1000px; */
-    flex: 0 0 1000px;
+    flex: 0 0 800px;
 
     font-family: 'Inter', sans-serif;
 
