@@ -32,12 +32,18 @@
 .follow-profile .left{
     display: flex;
     justify-content: left;
+    font-size: .7rem;
+}
+.follow-profile .left .title .name{
+    display: flex;
+    justify-content: left;
+    font-size: .87rem;
 }
 .follow-profile button{
     color: #6E767D;
     border-radius: 30px;
-    padding: .7rem 2rem;
-    font-size: 1rem;
+    padding: .5rem 1rem;
+    font-size: .87rem;
 }
 
 .name-accompt-follow{
@@ -119,7 +125,8 @@ ul .trend-list, .trend-tag, .trend-tweet{
 
 .sidebarcontainer {
     padding-top: 10px;
-    margin-left: 2.6rem;
+    margin-left: 1.6rem;
+    margin-right: 2.6rem;
     font-family: 'Inter', sans-serif;
     overflow: hidden;
     width: 420px;
@@ -179,4 +186,8 @@ ul .trend-list, .trend-tag, .trend-tweet{
     text-align: center;
     margin-top: 30px;
     padding: .77rem 2rem;
+}
+
+.tweet .tweet-avatar{
+    width: 60px;
 }
