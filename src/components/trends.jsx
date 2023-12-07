@@ -1,0 +1,59 @@
+import ToolstrendsImage from "../iconSide/Settings-trends.svg";
+import TrendMore from "../iconSide/trend-more.svg";
+
+function TrendList() {
+  const trendlist = [
+    {
+      trendListTitle: "Trending in Turkey",
+      trendTag: "#SQUID",
+      trendTweet: "2,066 Tweets",
+    },
+  ];
+  return (
+    <>
+      {trendlist.map(({ trendListTitle, trendTag, trendTweet }) => (
+        <ul>
+          <div className="trend-list">
+            <div className="trend-list-title">
+              <h3>{trendListTitle}</h3>
+              <img src={TrendMore} />
+            </div>
+          </div>
+          <div className="trend-tag">{trendTag}</div>
+          <div className="trend-tweet">{trendTweet}</div>
+        </ul>
+      ))}
+    </>
+  );
+}
+
+function TrendTitle() {
+  return (
+    <>
+      <div className="trends-title">
+        <h2>Trends for you</h2>
+        <img src={ToolstrendsImage} />
+      </div>
+    </>
+  );
+}
+function ShowMore() {
+  return (
+    <div className="showmore">
+      <span>Show more</span>
+    </div>
+  );
+}
+
+export default function Trends() {
+  return (
+    <div className="trends">
+      <TrendTitle />
+      <TrendList />
+      <TrendList />
+      <TrendList />
+      <TrendList />
+      <ShowMore />
+    </div>
+  );
+}

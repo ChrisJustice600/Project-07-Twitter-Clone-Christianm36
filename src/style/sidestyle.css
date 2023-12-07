@@ -1,11 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
-.wrapper{
+.wrapper {
     display: flex;
     justify-content: center;
     width: 100%;
 
 }
+
+.trends {
+    background: #16181c;
+    margin-top: 1rem;
+    border-radius: 25px;
+    padding: 20px;
+}
+.follow{
+    background: #16181c;
+    margin-top: 1rem;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.trends-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trends-title img {
+    width: 30px;
+}
+
+.trend-list-title {
+    margin-top: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trend-list-title h3 {
+    font-weight: normal;
+    color: gray;
+}
+ul .trend-list, .trend-tag, .trend-tweet{
+    cursor: pointer;
+}
+.showmore{
+    margin-top: 2.3rem;
+}
+.showmore span{
+    color:#1D9BF0;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.trend-tag {
+    margin-top: .7rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.trend-tweet {
+    margin-top: .7rem;
+    color: gray;
+    font-size: 1.2rem;
+}
+
 .container {
     width: 230px;
     padding-top: 10px;
@@ -14,16 +73,23 @@
     font-weight: bold;
     font-family: 'Inter', sans-serif;
 }
-.sidebarcontainer{
+
+.sidebarcontainer {
     padding-top: 10px;
+    margin-left: 2.6rem;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    width: 385px;
+
 }
+
 .form-side-bar {
     position: relative;
-    background: #1D9BF0;
-    width: 320px;
+    background: #16181c;
     height: 50px;
     border-radius: 42px;
 }
+
 .form-side-bar img {
     width: 22px;
     height: 22px;
@@ -32,7 +98,7 @@
     top: 25%;
 }
 
-.form-side-bar input{
+.form-side-bar input {
     position: absolute;
     left: 50px;
     bottom: 12px;
@@ -45,6 +111,7 @@
     font-size: 1.4rem;
 
 }
+
 .twitter-logo {
     margin-bottom: 25px;
     margin-left: 20px;
