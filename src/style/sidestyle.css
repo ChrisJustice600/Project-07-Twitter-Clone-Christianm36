@@ -8,18 +8,61 @@
 }
 
 .trends {
-    background: #16181c;
+    background: #0F1419;
     margin-top: 1rem;
     border-radius: 25px;
     padding: 20px;
 }
 .follow{
-    background: #16181c;
+    background: #0F1419;
     margin-top: 1rem;
     border-radius: 25px;
     padding: 20px;
 }
+.follow h2{
+    color: #EFF3F4;
+}
+.follow-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.7rem;
 
+}
+.follow-profile .left{
+    display: flex;
+    justify-content: left;
+}
+.follow-profile button{
+    color: #6E767D;
+    border-radius: 30px;
+    padding: .7rem 2rem;
+    font-size: 1rem;
+}
+
+.name-accompt-follow{
+    margin-left: 15px;
+}
+.name-accompt-follow .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name-accompt-follow .title img{
+    margin-right: 5px;
+}
+.name-accompt-follow .title .name{
+    font-size: 1rem;
+}
+.name-accompt-follow > div:nth-child(2){
+    color: gray;
+    margin-top: .2rem;
+}
+
+.follow-profile .left> img:nth-child(1) {
+    width: 50px;
+    height: 50px;
+}
 .trends-title {
     display: flex;
     justify-content: space-between;
@@ -79,7 +122,7 @@ ul .trend-list, .trend-tag, .trend-tweet{
     margin-left: 2.6rem;
     font-family: 'Inter', sans-serif;
     overflow: hidden;
-    width: 385px;
+    width: 420px;
 
 }
 
