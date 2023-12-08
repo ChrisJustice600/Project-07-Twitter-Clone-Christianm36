@@ -1,5 +1,5 @@
 import Verified from "../images/Verified.png";
-import ShowMore from ""
+import ShowMore from "./showMore";
 
 export default function WoToFollow() {
   const followProfile = [
@@ -9,7 +9,7 @@ export default function WoToFollow() {
       tag: "@nytimes",
     },
     {
-      avatarProfile: "src/images/tweet-profile-photo.png",
+      avatarProfile: "src/images/photocnn.svg",
       name: "CNN",
       tag: "@CNN",
     },

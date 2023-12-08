@@ -62,8 +62,8 @@
 }
 
 .follow-profile .left> img:nth-child(1) {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 .trends-title {
     display: flex;
@@ -94,7 +94,7 @@ ul .trend-list, .trend-tag, .trend-tweet{
 .showmore span{
     color:#1D9BF0;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -117,6 +117,7 @@ ul .trend-list, .trend-tag, .trend-tweet{
     font-size: 1rem;
     font-weight: bold;
     font-family: 'Inter', sans-serif;
+
 }
 
 .sidebarcontainer {

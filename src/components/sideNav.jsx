@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function ButtonTwitter(){
     return(
-        <div className="btn-twitter">Twitter</div>
+        <div className="btn-twitter">Tweet</div>
     )
 }
 

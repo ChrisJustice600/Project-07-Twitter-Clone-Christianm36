@@ -1,21 +1,19 @@
 import React from "react";
-import Header from "../components/Header";
-import TweetEditor from "../components/TweetEditor";
-import Tweets from "../components/Tweets";
+import TimeLine from "../components/timeLine";
 import SideBar from "../components/sideBar";
 import SideNav from "../components/sideNav";
+import Profile from "../components/profileComponent/profile";
+
 
 function Home() {
   return (
     <>
-    <SideNav />
+      <SideNav />
       <main className="timeline">
-        <Header />
-        <TweetEditor />
-        <Tweets />
+        {/* <TimeLine /> */}
+        <Profile />
       </main>
       <SideBar />
-
     </>
   );
 }

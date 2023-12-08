@@ -1,5 +1,6 @@
 import ToolstrendsImage from "../iconSide/Settings-trends.svg";
 import TrendMore from "../iconSide/trend-more.svg";
+import ShowMore from "./showMore";
 
 function TrendList() {
   const trendlist = [
@@ -37,15 +38,7 @@ function TrendTitle() {
     </>
   );
 }
-function ShowMore() {
-  return (
-    <div className="showmore">
-      <span>Show more</span>
-    </div>
-  );
-}
 
-export ShowMore
 
 export default function Trends() {
   return (
