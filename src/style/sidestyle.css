@@ -32,6 +32,7 @@
 .follow-profile .left{
     display: flex;
     justify-content: left;
+    align-items: center;
     font-size: .7rem;
 }
 .follow-profile .left .title .name{
@@ -54,12 +55,7 @@
     justify-content: center;
     align-items: center;
 }
-.name-accompt-follow .title img{
-    margin-right: 5px;
-}
-.name-accompt-follow .title .name{
-    font-size: 1rem;
-}
+
 .name-accompt-follow > div:nth-child(2){
     color: gray;
     margin-top: .2rem;

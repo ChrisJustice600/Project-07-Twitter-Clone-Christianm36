@@ -45,6 +45,8 @@ function ShowMore() {
   );
 }
 
+export ShowMore
+
 export default function Trends() {
   return (
     <div className="trends">

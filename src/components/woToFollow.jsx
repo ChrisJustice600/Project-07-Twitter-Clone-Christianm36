@@ -1,4 +1,5 @@
 import Verified from "../images/Verified.png";
+import ShowMore from ""
 
 export default function WoToFollow() {
   const followProfile = [
@@ -39,6 +40,8 @@ export default function WoToFollow() {
           </div>
         ))}
       </div>
+      <ShowMore />
+
     </div>
   );
 }
