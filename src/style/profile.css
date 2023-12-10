@@ -1,4 +1,4 @@
-.author-profile{
+.author-profile {
     display: flex;
     justify-content: left;
     align-items: center;
@@ -14,17 +14,19 @@
 .author-name {
     margin-left: 1.6rem;
 }
-.author-name .name{
+
+.author-name .name {
     font-weight: bold;
     font-size: 1rem;
 }
+
 .author-name .author-post-number {
     font-size: .8rem;
     margin-top: .5rem;
     color: rgb(113, 118, 123);
 }
 
-.banner-profile{
+.banner-profile {
     height: 200px;
     background: rgb(113, 118, 123);
     position: relative;
@@ -37,7 +39,7 @@
     border-radius: 9999px;
     margin-left: 1.3rem;
     position: absolute;
-    top: 110px;
+    top: 125px;
 }
 
 .image-profile img {
@@ -47,18 +49,71 @@
     cursor: pointer;
 }
 
-.edit-profile{
+.edit-profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.edit-profile span{
-    border:2px solid rgb(113, 118, 123) ;
+.edit-profile span {
+    border: 2px solid rgb(113, 118, 123);
     border-radius: 25px;
     font-weight: bold;
     font-size: .9rem;
     padding: 10px;
     margin: 10px 10px;
     cursor: pointer;
+}
+
+.profile-informations {
+    margin: 1.4rem 1rem;
+}
+
+.profile-informations .info-name .name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.profile-informations .info-name .tag {
+    font-size: .89rem;
+    margin-top: .3rem;
+    color: rgb(113, 118, 123);
+}
+
+.date-joined {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    color: rgb(113, 118, 123);
+    font-size: .95rem;
+}
+
+.date-joined .date {
+    margin-left: .3rem;
+}
+
+.section-follow-profile {
+    display: flex;
+    font-size: .84rem;
+    margin-top: .9rem;
+    color: rgb(113, 118, 123);
+}
+
+.section-follow-profile span{
+    color: white;
+    font-weight: bold;
+}
+.section-follow-profile .follower {
+    margin-left: 1rem;
+}
+
+.choice-section-profile{
+    color: rgb(113, 118, 123);
+    margin-top: 1.3rem;
+    background: red;
+
+}
+
+.choice-section-profile span {
+    padding: 2rem;
 }
