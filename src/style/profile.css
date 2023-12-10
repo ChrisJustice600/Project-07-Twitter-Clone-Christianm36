@@ -99,27 +99,36 @@
     color: rgb(113, 118, 123);
 }
 
-.section-follow-profile span{
+.section-follow-profile span {
     color: white;
     font-weight: bold;
 }
+
 .section-follow-profile .follower {
     margin-left: 1rem;
 }
 
-.choice-section-profile{
+.choice-section-profile {
     color: rgb(113, 118, 123);
     margin-top: 1.3rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;    
+    align-items: center;
     border-bottom: 2px solid rgb(113, 118, 123);
 
 }
 
-.choice-section-profile div{
-    padding: 1rem 0;
+.choice-section-profile div {
+    flex-grow: 1;
+    text-align: center;
+    padding: 1.2rem 0;
 }
-.choice-section-profile div span{
-    padding: 2rem;
+.choice-section-profile div {
+    flex-grow: 1;
+    text-align: center;
+    padding: 1.2rem 0;
 }
+
+.choice-section-profile div:hover {
+    background: rgba(113, 118, 123, 0.200);
+}
+
