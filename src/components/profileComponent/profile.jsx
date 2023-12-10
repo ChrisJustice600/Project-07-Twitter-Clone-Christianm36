@@ -42,14 +42,15 @@ export default function Profile() {
           <span>2</span>Follower
           </div>
         </div>
-        <div className="choice-section-profile">
-          <span>Posts</span>
-          <span>Peplies</span>
-          <span>Highlights</span>
-          <span>Media</span>
-          <span>Likes</span>
-        </div>
+       
       </div>
+      <div className="choice-section-profile">
+          <div><span>Posts</span></div>
+          <div><span>Peplies</span></div>
+          <div><span>Highlights</span></div>
+          <div><span>Media</span></div>
+          <div><span>Likes</span></div>
+        </div>
     </div>
   );
 }

@@ -110,10 +110,16 @@
 .choice-section-profile{
     color: rgb(113, 118, 123);
     margin-top: 1.3rem;
-    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    border-bottom: 2px solid rgb(113, 118, 123);
 
 }
 
-.choice-section-profile span {
+.choice-section-profile div{
+    padding: 1rem 0;
+}
+.choice-section-profile div span{
     padding: 2rem;
 }
