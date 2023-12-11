@@ -117,7 +117,14 @@ ul .trend-list, .trend-tag, .trend-tweet{
     font-size: 1rem;
     font-weight: bold;
     font-family: 'Inter', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
+.container a{
+    text-decoration: none;
+    color: white;
 }
 
 .sidebarcontainer {
@@ -127,7 +134,6 @@ ul .trend-list, .trend-tag, .trend-tweet{
     font-family: 'Inter', sans-serif;
     overflow: hidden;
     width: 420px;
-
 }
 
 .form-side-bar {

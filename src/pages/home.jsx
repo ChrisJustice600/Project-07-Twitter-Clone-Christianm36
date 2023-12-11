@@ -2,7 +2,6 @@ import React from "react";
 import TimeLine from "../components/timeLine";
 import SideBar from "../components/sideBar";
 import SideNav from "../components/sideNav";
-import Profile from "../components/profileComponent/profile";
 
 
 function Home() {
@@ -10,8 +9,7 @@ function Home() {
     <>
       <SideNav />
       <main className="timeline">
-        {/* <TimeLine /> */}
-        <Profile />
+        <TimeLine />
       </main>
       <SideBar />
     </>
