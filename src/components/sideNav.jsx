@@ -14,7 +14,7 @@ function ButtonTwitter(){
 export default function SideNav() {
   // navItems
   const navItems = [
-    { icon: "src/iconSide/home.svg", link: "Home", path: "/" },
+    { icon: "src/iconSide/home.svg", link: "Home", path: "/home" },
     { icon: "src/iconSide/explore.png", link: "Explore", path: "" },
     { icon: "src/iconSide/notifications.svg", link: "Notifications", path: "" },
     { icon: "src/iconSide/message.svg", link: "Message", path: "" },

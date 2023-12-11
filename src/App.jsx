@@ -2,6 +2,8 @@ import Home from "./pages/home.jsx";
 import Layout from "./components/layout.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Profile from "./pages/profilePage/profile.jsx";
+import data from "./data.json"
+import Tweets from "./components/Tweets.jsx";
 
 import("./style/reset.css");
 import("./style/App.css");
@@ -12,7 +14,9 @@ export default function App() {
     <Layout>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home home={data}/>} >
+            <Route index  element={<Tweets home={data}/>}/>
+          </Route>     
           <Route path="/profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>

@@ -12,7 +12,7 @@ function ProfileDetails() {
     <>
       <div>
         <div className="author-profile">
-          <Return linkValue='/' />
+          <Return linkValue='/home' />
           <div className="author-name">
             <div className="name">Christian mabeladi</div>
             <div className="author-post-number">0 Post</div>
