@@ -3,7 +3,6 @@ import TimeLine from "../components/timeLine";
 import SideBar from "../components/sideBar";
 import SideNav from "../components/sideNav";
 
-
 function Home() {
   return (
     <>

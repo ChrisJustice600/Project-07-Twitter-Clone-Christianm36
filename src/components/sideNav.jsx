@@ -25,7 +25,6 @@ export default function SideNav() {
   ];
 
   return (
-    <>
       <div className="container">
         <div className="twitter-logo">
           <img src={TwitterWhite} />
@@ -42,6 +41,5 @@ export default function SideNav() {
         </ul>
         <ButtonTwitter />
       </div>
-    </>
   );
 }

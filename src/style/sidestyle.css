@@ -117,9 +117,9 @@ ul .trend-list, .trend-tag, .trend-tweet{
     font-size: 1rem;
     font-weight: bold;
     font-family: 'Inter', sans-serif;
+    height: 100%;
     position: sticky;
     top: 0;
-    z-index: 100;
 }
 
 .container a{
