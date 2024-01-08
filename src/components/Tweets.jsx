@@ -16,9 +16,9 @@ export default function Tweets() {
                         content={item.content}
                         date={item.date}
                         imagebg={item.imagebg}
-                        action1={item.action1}
-                        action2={item.action2}
-                        action3={item.action3}
+                        reply={item.reply}
+                        repost={item.repost}
+                        like={item.like}
                     />
                 )
             })}

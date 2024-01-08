@@ -1,12 +1,13 @@
 import Verified from "../images/Verified.png"
 import Reply from "../images/Reply.png"
-import Vector from "../images/Vector.png"
-import Vector2 from "../images/Vector2.png"
+import Repost from "../images/Vector.png"
+import Like from "../images/Vector2.png"
 import Vector3 from "../images/Group1.svg"
+const user = useContext(UserContext);
 
 
 
-export default function Tweet({ Tweetavatar, authorName, authortag, imagebg, content, date, action1, action2, action3 }) {
+export default function Tweet({ Tweetavatar, authorName, authortag, imagebg, content, date, reply, repost, like }) {
     return (
         <div className="tweet">
             <img src={"src/images/" + Tweetavatar} className="tweet-avatar" />
@@ -28,15 +29,15 @@ export default function Tweet({ Tweetavatar, authorName, authortag, imagebg, con
                 <div className="tweet-actions">
                     <div className="tweet-action">
                         <img src={Reply} />
-                        <span>{action1}</span>
+                        <span>{reply}</span>
                     </div>
                     <div className="tweet-action">
-                        <img src={Vector} />
-                        <span>{action2}</span>
+                        <img src={Repost} />
+                        <span>{repost}</span>
                     </div>
                     <div className="tweet-action">
-                        <img src={Vector2} />
-                        <span>{action3}</span>
+                        <img src={Like} />
+                        <span>{like}</span>
                     </div>
                     <div className="tweet-action">
                         <img src={Vector3} />
