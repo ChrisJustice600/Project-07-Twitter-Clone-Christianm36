@@ -1,8 +1,5 @@
 import Verified from "../images/Verified.png"
-import Reply from "../images/Reply.png"
-import Repost from "../images/Vector.png"
-import Like from "../images/Vector2.png"
-import Vector3 from "../images/Group1.svg"
+import TweetActions from "./tweetActions/TweetActions"
 
 
 
@@ -25,24 +22,9 @@ export default function Tweet({ Tweetavatar, authorName, authortag, imagebg, con
                         }
                     </div>
                 </div>
-                <div className="tweet-actions">
-                    <div className="tweet-action">
-                        <img src={Reply} />
-                        <span>{reply}</span>
-                    </div>
-                    <div className="tweet-action">
-                        <img src={Repost} />
-                        <span>{repost}</span>
-                    </div>
-                    <div className="tweet-action">
-                        <img src={Like} />
-                        <span>{like}</span>
-                    </div>
-                    <div className="tweet-action">
-                        <img src={Vector3} />
-                    </div>
-                </div>
-            </div>
+                
+{                <TweetActions  reply={reply} repost={repost} like={like}/>
+}            </div>
         </div>
     )
 }
