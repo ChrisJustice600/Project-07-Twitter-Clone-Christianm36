@@ -3,7 +3,6 @@ import Reply from "../images/Reply.png"
 import Repost from "../images/Vector.png"
 import Like from "../images/Vector2.png"
 import Vector3 from "../images/Group1.svg"
-const user = useContext(UserContext);
 
 
 
