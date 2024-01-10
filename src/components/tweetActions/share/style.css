@@ -1,0 +1,28 @@
+.share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.share:hover span,
+.share.custom-fill:hover svg path {
+  color: #3498db; /* Couleur de survol pour le span */
+  fill: #3498db; /* Couleur de survol pour le chemin du SVG */
+}
+
+.share .share-custom {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.share:hover .share-custom {
+  padding: 8px;
+  background: #3498db2f;
+  border-radius: 50%;
+
+}
+.all svg{
+  width: 26px;
+}

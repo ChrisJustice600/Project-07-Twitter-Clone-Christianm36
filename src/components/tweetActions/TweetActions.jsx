@@ -1,8 +1,8 @@
-import Like from "../../images/Vector2.png"
 import Vector3 from "../../images/Group1.svg"
 import ReplyAction from "./reply/ReplyAction"
 import RepostAction from "./repost/RepostAction"
-
+import LikeAction from "./like/LikeAction"
+import ShareAction from "./share/ShareAction"
 
 
 export default function TweetActions({ reply, repost, like }) {
@@ -16,11 +16,10 @@ export default function TweetActions({ reply, repost, like }) {
                     <RepostAction repost={repost} />
                 </div>
                 <div className="tweet-action">
-                    <img src={Like} />
-                    <span>{like}</span>
+                    <LikeAction like={like} />
                 </div>
                 <div className="tweet-action">
-                    <img src={Vector3} />
+                    <ShareAction />
                 </div>
             </div>
         </>

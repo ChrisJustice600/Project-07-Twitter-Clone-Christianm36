@@ -1,0 +1,28 @@
+.like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.like:hover span,
+.like.custom-fill:hover svg path {
+  color: #F91880; /* Couleur de survol pour le span */
+  fill: #F91880; /* Couleur de survol pour le chemin du SVG */
+}
+
+.like .like-custom {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.like:hover .like-custom {
+  padding: 8px;
+  background: #f918802f;
+  border-radius: 50%;
+
+}
+.all svg{
+  width: 26px;
+}
