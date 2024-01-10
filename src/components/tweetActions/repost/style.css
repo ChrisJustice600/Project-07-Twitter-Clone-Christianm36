@@ -1,0 +1,25 @@
+.reply {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.reply:hover span,
+.custom-fill:hover svg path {
+  color: #3498db; /* Couleur de survol pour le span */
+  fill: #3498db; /* Couleur de survol pour le chemin du SVG */
+}
+
+.reply .reply-custom {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reply:hover .reply-custom {
+  padding: 8px;
+  background: #3498db2f;
+  border-radius: 50%;
+
+}
