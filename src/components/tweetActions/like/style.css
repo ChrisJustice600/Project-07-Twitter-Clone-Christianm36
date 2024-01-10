@@ -26,3 +26,8 @@
 .all svg{
   width: 26px;
 }
+
+.clicked svg path{
+  stroke: #F91880;
+  background: #F91880;
+}
