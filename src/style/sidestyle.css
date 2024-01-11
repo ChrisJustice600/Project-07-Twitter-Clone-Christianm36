@@ -175,7 +175,7 @@ ul .trend-list, .trend-tag, .trend-tweet{
     margin-left: 20px;
 }
 
-.list-content {
+/* .list-content {
     margin-top: 25px;
     margin-left: 20px;
     display: flex;
@@ -184,7 +184,7 @@ ul .trend-list, .trend-tag, .trend-tweet{
 
 .list-content span {
     margin-left: 25px;
-}
+} */
 
 .btn-twitter {
     border-radius: 50px;
@@ -213,7 +213,7 @@ ul .trend-list, .trend-tag, .trend-tweet{
 
 /* LINK PROFILE BOTTOM */
 .down{
-    margin-top: 40px;
+    margin-top: 50px;
     cursor: pointer;
 }
 
@@ -221,16 +221,29 @@ ul .trend-list, .trend-tag, .trend-tweet{
     border-radius: 40px;
     background: rgba(128, 128, 128, 0.2);
     transition: ease-in-out .5s;
-
 }
-
-
 
 .profile-bottom{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+
+}
+
+.list-content {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+li.list-content:hover{
+    border-radius: 40px;
+    background: rgba(128, 128, 128, 0.2);
+    transition: ease-in-out .5s;
+}
+.list-content span {
+    margin-left: 25px;
 
 }
 
@@ -271,3 +284,6 @@ ul .trend-list, .trend-tag, .trend-tweet{
     width: 40px;
     height: 40px;
 }
+
+
+
