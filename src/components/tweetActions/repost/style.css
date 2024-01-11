@@ -7,8 +7,8 @@
 
 .repost:hover span,
 .repost.custom-fill:hover svg path {
-  color: #00BA7C; /* Couleur de survol pour le span */
-  fill: #00BA7C; /* Couleur de survol pour le chemin du SVG */
+  color: #00ba7c; /* Couleur de survol pour le span */
+  fill: #00ba7c; /* Couleur de survol pour le chemin du SVG */
 }
 
 .repost .repost-custom {
@@ -17,9 +17,9 @@
   align-items: center;
   justify-content: center;
 }
+
 .repost:hover .repost-custom {
   padding: 8px;
   background: #3498db2f;
   border-radius: 50%;
-
 }

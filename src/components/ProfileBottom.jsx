@@ -1,23 +1,31 @@
 import React from 'react';
 import MonProfile from "../iconprofile/mon-profile.jpg";
 import TrendMore from "../iconSide/trend-more.svg";
+import { Link } from "react-router-dom";
 
 
 export default function ProfileBottom() {
     return (
-        <div className='down'>
-            <div className="follow-profile">
-                <div className="left">
-                    <img src={MonProfile} />
-                    <div className="name-accompt-follow">
-                        <div className="title">
-                            <div className="name">Christian Mabeladi</div>
+        <>
+            <div className='down'>
+
+                <Link to="/profile" >
+                    <div className="follow-profile">
+                        <div className="left">
+                            <img src={MonProfile} />
+                            <div className="name-accompt-follow">
+                                <div className="title">
+                                    <div className="name">Christian Mabeladi</div>
+                                </div>
+                                <div>@JusticeChrisM</div>
+                            </div>
                         </div>
-                        <div>@JusticeChrisM</div>
+                        <img className='more' src={TrendMore} />
                     </div>
-                </div>
-                <img className='more' src={TrendMore} />
+                </Link>
+
             </div>
-        </div>
+        </>
+
     )
 }

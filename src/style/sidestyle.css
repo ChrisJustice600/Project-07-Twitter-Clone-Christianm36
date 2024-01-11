@@ -205,4 +205,6 @@ ul .trend-list, .trend-tag, .trend-tweet{
 
 .down{
     margin-top: 140px;
+    cursor: pointer;
 }
+
