@@ -199,3 +199,10 @@ ul .trend-list, .trend-tag, .trend-tweet{
     border-radius: 50%;
 }
 
+.follow-profile .more{
+    margin-left: 10px;
+}
+
+.down{
+    margin-top: 140px;
+}
