@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import MonProfile from "../iconprofile/mon-profile.jpg";
 import TrendMore from "../iconSide/trend-more.svg";
 
@@ -12,11 +12,12 @@ export default function ProfileBottom() {
                     <div className="name-accompt-follow">
                         <div className="title">
                             <div className="name">Christian Mabeladi</div>
+                            <img src={TrendMore} />
+
                         </div>
                         <div>@JusticeChrisM</div>
                     </div>
                 </div>
-                <img src={TrendMore} />
             </div>
         </div>
     )

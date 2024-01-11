@@ -194,3 +194,8 @@ ul .trend-list, .trend-tag, .trend-tweet{
 .tweet .tweet-avatar{
     width: 60px;
 }
+
+.follow-profile .left img{
+    border-radius: 50%;
+}
+
