@@ -10,10 +10,11 @@ export default function ProfileBottom() {
             <div className='down'>
 
                 <Link to="/profile" >
-                    <div className="follow-profile">
+            
+                    <div className="profile-bottom">
                         <div className="left">
                             <img src={MonProfile} />
-                            <div className="name-accompt-follow">
+                            <div className="name-accompt">
                                 <div className="title">
                                     <div className="name">Christian Mabeladi</div>
                                 </div>

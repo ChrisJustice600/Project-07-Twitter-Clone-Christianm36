@@ -70,6 +70,9 @@
     justify-content: space-between;
     align-items: center;
 }
+.trends-title h2{
+    font-size: 19px;
+}
 
 .trends-title img {
     width: 30px;
@@ -120,6 +123,8 @@ ul .trend-list, .trend-tag, .trend-tweet{
     height: 100%;
     position: sticky;
     top: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .container a{
@@ -133,7 +138,7 @@ ul .trend-list, .trend-tag, .trend-tweet{
     margin-right: 2.6rem;
     font-family: 'Inter', sans-serif;
     overflow: hidden;
-    width: 420px;
+    /* width: 420px; */
 }
 
 .form-side-bar {
@@ -195,16 +200,74 @@ ul .trend-list, .trend-tag, .trend-tweet{
     width: 60px;
 }
 
-.follow-profile .left img{
+.profile-bottom .left img{
     border-radius: 50%;
 }
 
-.follow-profile .more{
+.profile-bottom .more{
     margin-left: 10px;
 }
 
+
+
+
+/* LINK PROFILE BOTTOM */
 .down{
-    margin-top: 140px;
+    margin-top: 40px;
     cursor: pointer;
 }
 
+.down:hover{
+    border-radius: 40px;
+    background: rgba(128, 128, 128, 0.2);
+    transition: ease-in-out .5s;
+
+}
+
+
+
+.profile-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.profile-bottom .left {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: .7rem;
+}
+
+.profile-bottom .left .title .name{
+    display: flex;
+    justify-content: left;
+    font-size: .80rem;
+}
+.profile-bottom button{
+    color: #6E767D;
+    border-radius: 30px;
+    padding: .5rem 1rem;
+    font-size: .87rem;
+}
+
+.name-accompt{
+    margin-left: 15px;
+}
+.name-accompt .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-accompt > div:nth-child(2){
+    color: gray;
+    margin-top: .2rem;
+}
+
+.profile-bottom .left> img:nth-child(1) {
+    width: 40px;
+    height: 40px;
+}

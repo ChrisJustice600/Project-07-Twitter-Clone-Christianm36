@@ -35,6 +35,42 @@
             "reply": "18",
             "repost": "99",
             "like": "22"
+        },
+        {
+            "id": "3",
+            "imageavatar": "image 1.png",
+            "authorName": "Tweeter",
+            "authortag": "@tweeter",
+            "date": "Oct 29",
+            "content": "BIG NEWS lol jk still Twitter.",
+            "imagebg": "",
+            "reply": "18",
+            "repost": "99",
+            "like": "22"
+        },
+        {
+            "id": "3",
+            "imageavatar": "image 1.png",
+            "authorName": "Tweeter",
+            "authortag": "@tweeter",
+            "date": "Oct 29",
+            "content": "BIG NEWS lol jk still Twitter.",
+            "imagebg": "",
+            "reply": "18",
+            "repost": "99",
+            "like": "22"
+        },
+        {
+            "id": "3",
+            "imageavatar": "image 1.png",
+            "authorName": "Tweeter",
+            "authortag": "@tweeter",
+            "date": "Oct 29",
+            "content": "BIG NEWS lol jk still Twitter.",
+            "imagebg": "",
+            "reply": "18",
+            "repost": "99",
+            "like": "22"
         }
     ]
 }

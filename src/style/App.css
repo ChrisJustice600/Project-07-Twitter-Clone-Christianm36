@@ -26,9 +26,8 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
 .timeline {
-    flex: 0 0 700px;
+    flex: 0 0 600px;
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;
 }
