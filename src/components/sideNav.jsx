@@ -1,6 +1,7 @@
 import Home from "../iconSide/home.svg";
 import TwitterWhite from "../iconSide/Twitter-white.svg";
 import { NavLink } from "react-router-dom";
+import ProfileBottom from "./profileBottom";
 
 
 function ButtonTwitter(){
@@ -40,6 +41,7 @@ export default function SideNav() {
           ))}
         </ul>
         <ButtonTwitter />
+        <ProfileBottom />
       </div>
   );
 }
