@@ -13,7 +13,7 @@ function TrendList() {
   return (
     <>
       {trendlist.map(({ trendListTitle, trendTag, trendTweet }) => (
-        <ul>
+        <ul className="trend-contenair">
           <div className="trend-list">
             <div className="trend-list-title">
               <h3>{trendListTitle}</h3>
@@ -43,7 +43,9 @@ function TrendTitle() {
 export default function Trends() {
   return (
     <div className="trends">
-      <TrendTitle />
+      <div className="trendTitle">
+        <TrendTitle />
+      </div>
       <TrendList />
       <TrendList />
       <TrendList />

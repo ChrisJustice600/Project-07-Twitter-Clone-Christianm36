@@ -34,13 +34,13 @@ export default function SideNav() {
 
         <ul>
           {navItems.map(({ icon, link,path }) => (
-            <li className="list-content">
+            <span className="list-content">
               <img src={icon} />
               <NavLink to={path}><span>{link}</span></NavLink>
-            </li>
+            </span>
           ))}
         </ul>
-        <ButtonTwitter />
+        <ButtonTwitter /> 
         <ProfileBottom />
       </div>
   );
