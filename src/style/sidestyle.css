@@ -10,16 +10,20 @@
   background: #0f1419;
   margin-top: 1rem;
   border-radius: 25px;
-  padding: 20px;
 }
 .follow h2 {
   color: #eff3f4;
+  font-size: 20px;
+  padding: 20px;
 }
 .follow-profile {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1.7rem;
+  padding: 15px;
+}
+.follow-profile:hover {
+  background: rgba(128, 128, 128, 0.272);
 }
 .follow-profile .left {
   display: flex;
@@ -214,7 +218,7 @@ ul .trend-list,
 
 /* LINK PROFILE BOTTOM */
 .down {
-  margin-top: 50px;
+  margin-top: 25px;
   cursor: pointer;
 }
 
