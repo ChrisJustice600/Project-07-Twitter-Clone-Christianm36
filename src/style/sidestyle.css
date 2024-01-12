@@ -234,7 +234,8 @@ ul .trend-list, .trend-tag, .trend-tweet{
 .list-content {
     display: flex;
     align-items: center;
-    padding: 12px;
+    padding: 15px;
+    cursor: pointer;
 }
 
 li.list-content:hover{
