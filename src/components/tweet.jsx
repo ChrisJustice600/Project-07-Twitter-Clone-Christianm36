@@ -10,6 +10,7 @@ export default function Tweet({ Tweetavatar, authorName, authortag, imagebg, con
             <div className="tweet-content">
                 <div className="tweet-body">
                     <div className="tweet-title">
+        
                         <h3 className="tweet-title-author">{authorName}</h3>
                         <img src={Verified} />
                         <span className="tweet-title-details">{authortag}</span>

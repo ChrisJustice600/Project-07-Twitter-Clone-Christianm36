@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Profile from "./pages/profilePage/profile.jsx";
 import data from "./data.json";
 import Tweets from "./components/Tweets.jsx";
+import ProfilePost from "./pages/profilePage/ProfilePost.jsx";
 
 import("./style/reset.css");
 import("./style/App.css");
@@ -19,6 +20,7 @@ export default function App() {
             <Route index element={<Tweets home={data} />} />
           </Route>
           <Route path="/profile" element={<Profile />} />
+          <Route path=":id" element={<ProfilePost/>} />
         </Routes>
       </BrowserRouter>
     </Layout>
