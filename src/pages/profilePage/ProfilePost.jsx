@@ -33,7 +33,7 @@ function ProfilePostDetails() {
           <img src="" alt="" />
           <div className="image-profile">
             <Link to="/home">
-              <img src={Post.imageavatar} />
+              <img src={"src/images/" + Post.imageavatar} />
             </Link>
           </div>
         </div>
