@@ -21,6 +21,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+  cursor: pointer;
 }
 .follow-profile:hover {
   background: rgba(128, 128, 128, 0.272);
@@ -66,11 +67,12 @@
   background: #0f1419;
   margin-top: 1rem;
   border-radius: 25px;
-  /* padding: 20px; */
+  cursor: pointer;
 }
 
 .trends .trendTitle {
   padding: 15px;
+  cursor: default;
 }
 
 .trends-title {
