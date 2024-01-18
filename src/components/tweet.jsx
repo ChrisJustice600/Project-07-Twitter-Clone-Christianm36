@@ -4,7 +4,7 @@ import TweetActions from "./tweetActions/TweetActions"
 
 
 
-export default function Tweet({item, Tweetavatar, authorName, authortag, imagebg, content, date, reply, repost, like }) {
+export default function Tweet({ item, Tweetavatar, authorName, authortag, imagebg, content, date, reply, repost, like }) {
     return (
         <div className="tweet">
             <Link to={`/${item}`}>
@@ -13,10 +13,13 @@ export default function Tweet({item, Tweetavatar, authorName, authortag, imagebg
             <div className="tweet-content">
                 <div className="tweet-body">
                     <div className="tweet-title">
-
-                        <h3 className="tweet-title-author">{authorName}</h3>
+                        <Link to={`/${item}`}>
+                            <h3 className="tweet-title-author">{authorName}</h3>
+                        </Link>
                         <img src={Verified} />
-                        <span className="tweet-title-details">{authortag}</span>
+                        <Link to={`/${item}`}>
+                            <span className="tweet-title-details">{authortag}</span>
+                        </Link>
                         <span className="tweet-title-details">.</span>
                         <span className="tweet-title-details">{date}</span>
                     </div>
