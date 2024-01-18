@@ -19,7 +19,6 @@ function ProfileDetails() {
           </div>
         </div>
         <div className="banner-profile">
-          <img src="" alt="" />
           <div className="image-profile">
             <Link to="/home">
               <img src={MonProfile} />

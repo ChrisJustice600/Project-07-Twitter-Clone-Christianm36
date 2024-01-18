@@ -10,7 +10,8 @@
             "imagebg": "",
             "reply": "19",
             "repost": "144",
-            "like": "184"
+            "like": "184",
+            "bio": "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps"
         },
         {
             "id": "2",
@@ -22,7 +23,8 @@
             "imagebg": "tweet-image.png",
             "reply": "60",
             "repost": "245k",
-            "like": "111"
+            "like": "111",
+            "bio": "News tips? Share them here: http://nyti.ms/2FVHq9v"
         },
         {
             "id": "3",
@@ -34,7 +36,8 @@
             "imagebg": "",
             "reply": "18",
             "repost": "99",
-            "like": "22"
+            "like": "22",
+            "bio": "what's happening?!"
         },
         {
             "id": "3",
@@ -46,7 +49,9 @@
             "imagebg": "",
             "reply": "18",
             "repost": "99",
-            "like": "22"
+            "like": "22",
+            "bio": "what's happening?!"
+
         },
         {
             "id": "3",
@@ -58,7 +63,9 @@
             "imagebg": "",
             "reply": "18",
             "repost": "99",
-            "like": "22"
+            "like": "22",
+            "bio": "what's happening?!"
+
         },
         {
             "id": "3",
@@ -70,7 +77,8 @@
             "imagebg": "",
             "reply": "18",
             "repost": "99",
-            "like": "22"
+            "like": "22",
+            "bio": "what's happening?!"
         }
     ]
 }

@@ -9,7 +9,6 @@ import { Link, useParams } from "react-router-dom";
 import Return from "../../components/return";
 import data from "../../data.json"
 
-import MonProfile from "../../iconprofile/mon-profile.jpg";
 import { IoCalendarOutline } from "react-icons/io5";
 
 
@@ -32,9 +31,8 @@ function ProfilePostDetails() {
         <div className="banner-profile">
           <img src="" alt="" />
           <div className="image-profile">
-            <Link to="/home">
-              <img src={"src/images/" + Post.imageavatar} />
-            </Link>
+
+            <img src={"src/images/" + Post.imageavatar} />
           </div>
         </div>
         <div className="edit-profile">
@@ -43,8 +41,9 @@ function ProfilePostDetails() {
         </div>
         <div className="profile-informations">
           <div className="info-name">
-            <div className="name">Christian mabeladi</div>
-            <div className="tag">@JusticeChrisM</div>
+            <div className="name">{Post.authorName}</div>
+            <div className="tag">{Post.authortag}</div>
+            <div className="tag">{Post.bio}</div>
           </div>
           <div className="date-joined">
             <span>
