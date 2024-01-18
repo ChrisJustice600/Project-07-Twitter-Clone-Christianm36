@@ -1,84 +1,95 @@
 {
-    "tweet": [
-        {
-            "id": "1",
-            "imageavatar": "tweet-profile-photo.png",
-            "authorName": "CNN",
-            "authortag": "@CNN",
-            "date": "7min",
-            "content": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
-            "imagebg": "",
-            "reply": "19",
-            "repost": "144",
-            "like": "184",
-            "bio": "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps"
-        },
-        {
-            "id": "2",
-            "imageavatar": "Profile-Photo-new-york.png",
-            "authorName": "The New York Times",
-            "authortag": "@nytimes",
-            "date": "2h",
-            "content": "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land.",
-            "imagebg": "tweet-image.png",
-            "reply": "60",
-            "repost": "245k",
-            "like": "111",
-            "bio": "News tips? Share them here: http://nyti.ms/2FVHq9v"
-        },
-        {
-            "id": "3",
-            "imageavatar": "image 1.png",
-            "authorName": "Tweeter",
-            "authortag": "@tweeter",
-            "date": "Oct 29",
-            "content": "BIG NEWS lol jk still Twitter.",
-            "imagebg": "",
-            "reply": "18",
-            "repost": "99",
-            "like": "22",
-            "bio": "what's happening?!"
-        },
-        {
-            "id": "3",
-            "imageavatar": "image 1.png",
-            "authorName": "Tweeter",
-            "authortag": "@tweeter",
-            "date": "Oct 29",
-            "content": "BIG NEWS lol jk still Twitter.",
-            "imagebg": "",
-            "reply": "18",
-            "repost": "99",
-            "like": "22",
-            "bio": "what's happening?!"
-
-        },
-        {
-            "id": "3",
-            "imageavatar": "image 1.png",
-            "authorName": "Tweeter",
-            "authortag": "@tweeter",
-            "date": "Oct 29",
-            "content": "BIG NEWS lol jk still Twitter.",
-            "imagebg": "",
-            "reply": "18",
-            "repost": "99",
-            "like": "22",
-            "bio": "what's happening?!"
-
-        },
-        {
-            "id": "3",
-            "imageavatar": "image 1.png",
-            "authorName": "Tweeter",
-            "authortag": "@tweeter",
-            "date": "Oct 29",
-            "content": "BIG NEWS lol jk still Twitter.",
-            "imagebg": "",
-            "reply": "18",
-            "repost": "99",
-            "like": "22",
-            "bio": "what's happening?!"
-        }
-    ]
+  "tweet": [
+    {
+      "id": "1",
+      "imageavatar": "tweet-profile-photo.png",
+      "authorName": "CNN",
+      "authortag": "@CNN",
+      "date": "7min",
+      "content": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
+      "imagebg": "",
+      "reply": "19",
+      "repost": "144",
+      "like": "184",
+      "bio": "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps"
+    },
+    {
+      "id": "2",
+      "imageavatar": "Profile-Photo-new-york.png",
+      "authorName": "The New York Times",
+      "authortag": "@nytimes",
+      "date": "2h",
+      "content": "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land.",
+      "imagebg": "tweet-image.png",
+      "reply": "60",
+      "repost": "245k",
+      "like": "111",
+      "bio": "News tips? Share them here: http://nyti.ms/2FVHq9v"
+    },
+    {
+      "id": "3",
+      "imageavatar": "tweet-profile-photo.png",
+      "authorName": "CNN",
+      "authortag": "@CNN",
+      "date": "7min",
+      "content": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
+      "imagebg": "",
+      "reply": "19",
+      "repost": "144",
+      "like": "184",
+      "bio": "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps"
+    },
+    {
+      "id": "4",
+      "imageavatar": "image 1.png",
+      "authorName": "Tweeter",
+      "authortag": "@tweeter",
+      "date": "Oct 29",
+      "content": "BIG NEWS lol jk still Twitter.",
+      "imagebg": "",
+      "reply": "18",
+      "repost": "99",
+      "like": "22",
+      "bio": "what's happening?!"
+    },
+    {
+      "id": "5",
+      "imageavatar": "image 1.png",
+      "authorName": "Tweeter",
+      "authortag": "@tweeter",
+      "date": "Oct 29",
+      "content": "BIG NEWS lol jk still Twitter.",
+      "imagebg": "",
+      "reply": "18",
+      "repost": "99",
+      "like": "22",
+      "bio": "what's happening?!"
+    },
+    {
+      "id": "6",
+      "imageavatar": "image 1.png",
+      "authorName": "Tweeter",
+      "authortag": "@tweeter",
+      "date": "Oct 29",
+      "content": "BIG NEWS lol jk still Twitter.",
+      "imagebg": "",
+      "reply": "18",
+      "repost": "99",
+      "like": "22",
+      "bio": "what's happening?!"
+    },
+    {
+      "id": "7",
+      "imageavatar": "image 1.png",
+      "authorName": "Tweeter",
+      "authortag": "@tweeter",
+      "date": "Oct 29",
+      "content": "BIG NEWS lol jk still Twitter.",
+      "imagebg": "",
+      "reply": "18",
+      "repost": "99",
+      "like": "22",
+      "bio": "what's happening?!"
+    }
+  ]
 }

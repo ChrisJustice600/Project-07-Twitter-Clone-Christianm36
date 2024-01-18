@@ -10,6 +10,7 @@ import Return from "../../components/return";
 import data from "../../data.json"
 
 import { IoCalendarOutline } from "react-icons/io5";
+import Tweet from "../../components/tweet";
 
 
 function ProfilePostDetails() {
@@ -17,6 +18,26 @@ function ProfilePostDetails() {
 
 
   const Post = data.tweet.find((e) => e.id === id);
+
+
+
+
+
+  const tweetsByAuthor = data.tweet.reduce((acc, tweet) => {
+    const { authorName } = tweet;
+    if (!acc[authorName]) {
+      acc[authorName] = [];
+    }
+    acc[authorName].push(tweet);
+    return acc;
+  }, {});
+  
+  console.log(tweetsByAuthor);
+
+
+
+
+
 
   return (
     <>
@@ -76,6 +97,26 @@ function ProfilePostDetails() {
           <div>
             <span>Likes</span>
           </div>
+        </div>
+
+        <div className="tweets">
+            {data.tweet.map((item, index) => {
+                return (
+                        <Tweet key={index}
+                            Tweetavatar={item.imageavatar}
+                            authorName={item.authorName}
+                            authortag={item.authortag}
+                            content={item.content}
+                            date={item.date}
+                            imagebg={item.imagebg}
+                            reply={item.reply}
+                            repost={item.repost}
+                            like={item.like}
+                            item={item.id}
+                        />
+
+                )
+            })}
         </div>
       </div>
     </>
