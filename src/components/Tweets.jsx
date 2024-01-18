@@ -11,7 +11,6 @@ export default function Tweets() {
         <div className="tweets">
             {data.tweet.map((item, index) => {
                 return (
-                    <Link to={`/${item.id}`} >
                         <Tweet key={index}
                             Tweetavatar={item.imageavatar}
                             authorName={item.authorName}
@@ -22,8 +21,8 @@ export default function Tweets() {
                             reply={item.reply}
                             repost={item.repost}
                             like={item.like}
+                            item={item.id}
                         />
-                    </Link>
 
                 )
             })}

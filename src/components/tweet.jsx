@@ -1,16 +1,19 @@
+import { Link } from "react-router-dom"
 import Verified from "../images/Verified.png"
 import TweetActions from "./tweetActions/TweetActions"
 
 
 
-export default function Tweet({ Tweetavatar, authorName, authortag, imagebg, content, date, reply, repost, like }) {
+export default function Tweet({item, Tweetavatar, authorName, authortag, imagebg, content, date, reply, repost, like }) {
     return (
         <div className="tweet">
-            <img src={"src/images/" + Tweetavatar} className="tweet-avatar" />
+            <Link to={`/${item}`}>
+                <img src={"src/images/" + Tweetavatar} className="tweet-avatar" />
+            </Link>
             <div className="tweet-content">
                 <div className="tweet-body">
                     <div className="tweet-title">
-        
+
                         <h3 className="tweet-title-author">{authorName}</h3>
                         <img src={Verified} />
                         <span className="tweet-title-details">{authortag}</span>
@@ -23,9 +26,9 @@ export default function Tweet({ Tweetavatar, authorName, authortag, imagebg, con
                         }
                     </div>
                 </div>
-                
-{                <TweetActions  reply={reply} repost={repost} like={like}/>
-}            </div>
+
+                {<TweetActions reply={reply} repost={repost} like={like} />
+                }            </div>
         </div>
     )
 }
