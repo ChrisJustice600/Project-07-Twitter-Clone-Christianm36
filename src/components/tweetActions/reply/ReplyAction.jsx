@@ -3,6 +3,7 @@ import React from 'react'
 import("./style.css")
 
 export default function ReplyAction({ reply }) {
+    // console.log(item);
     return (
         <div className="reply custom-fill">
             <span className='reply-custom all'>

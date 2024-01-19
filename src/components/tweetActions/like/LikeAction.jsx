@@ -9,7 +9,7 @@ import("./style.css")
 
 export default function LikeAction({ like }) {
     const [isClicked, setIsClicked] = useState(false)
-    const [increment, setIncrement] = useState(244)
+    const [increment, setIncrement] = useState(parseInt(like, 10))
 
     const handleButttonClick = () => {
         setIsClicked(!isClicked)

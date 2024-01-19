@@ -2,7 +2,6 @@
 
 
 // profile
-import React from "react";
 import SideBar from "../../components/sideBar";
 import SideNav from "../../components/sideNav";
 import { Link, useParams } from "react-router-dom";
@@ -13,14 +12,18 @@ import { IoCalendarOutline } from "react-icons/io5";
 import Tweet from "../../components/tweet";
 
 
+import React, { useContext } from "react";
+import UserContext from "../../context/UserContext";
+
 function ProfilePostDetails() {
   const { id } = useParams();
 
+  const user = useContext(UserContext);
 
-  const Post = data.tweet.find((e) => e.id === id);
-console.log(Post);
+  const Post = user.data.tweet.find((e) => e.id === id);
+  // console.log(Post);
   // const allAuthorNames = data.tweet.map(tweet => tweet.authorName);
-// console.log(allAuthorNames);
+  // console.log(allAuthorNames);
 
 
 
@@ -32,15 +35,15 @@ console.log(Post);
   //   acc[authorName].push(tweet);
   //   return acc;
   // }, {});
-  
+
   // console.log(tweetsByAuthor);
 
-  const tweetsByAuthor = data.tweet.filter(
+  const tweetsByAuthor = user.data.tweet.filter(
     (tweet) => tweet.authorName === Post.authorName
   );
   const postlength = tweetsByAuthor.length
-console.log(postlength);
-// console.log(tweetsByAuthor);
+  // console.log(postlength);
+  // console.log(tweetsByAuthor);
 
 
 
@@ -104,25 +107,20 @@ console.log(postlength);
           </div>
         </div>
 
-        <div className="tweets">
-            {tweetsByAuthor.map((item, index) => {
-                return (
-                        <Tweet key={index}
-                            Tweetavatar={item.imageavatar}
-                            authorName={item.authorName}
-                            authortag={item.authortag}
-                            content={item.content}
-                            date={item.date}
-                            imagebg={item.imagebg}
-                            reply={item.reply}
-                            repost={item.repost}
-                            like={item.like}
-                            item={item.id}
-                        />
+       
 
-                )
-            })}
+        <div className="tweets">
+          {tweetsByAuthor.map((item, index) => {
+            return (
+              <Tweet key={index}
+              item={item}
+              />
+
+            )
+          })}
         </div>
+
+
       </div>
     </>
   );
