@@ -23,17 +23,26 @@ console.log(Post);
 // console.log(allAuthorNames);
 
 
+
+  // const tweetsByAuthor = data.tweet.reduce((acc, tweet) => {
+  //   const { authorName } = tweet;
+  //   if (!acc[authorName]) {
+  //     acc[authorName] = [];
+  //   }
+  //   acc[authorName].push(tweet);
+  //   return acc;
+  // }, {});
+  
   // console.log(tweetsByAuthor);
 
-
-
-// on filtre dans data tous les post par rapport à Post.authorName
-
-  // Filtrer tous les tweets par rapport à l'auteur actuel
   const tweetsByAuthor = data.tweet.filter(
     (tweet) => tweet.authorName === Post.authorName
   );
-  console.log(tweetsByAuthor);
+  const postlength = tweetsByAuthor.length
+console.log(postlength);
+// console.log(tweetsByAuthor);
+
+
 
   return (
     <>
@@ -42,7 +51,7 @@ console.log(Post);
           <Return linkValue='/home' />
           <div className="author-name">
             <div className="name">{Post.authorName}</div>
-            <div className="author-post-number">0 Post</div>
+            <div className="author-post-number">{postlength} Post</div>
           </div>
         </div>
         <div className="banner-profile">
