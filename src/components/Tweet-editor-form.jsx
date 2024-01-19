@@ -38,9 +38,9 @@ export default function TweetEditorForm() {
                 value={text}
                 onChange={formatText}
                 placeholder="What's happening" 
-  
+                style={{ overflowY: 'hidden' }}
             />
-            <input className="tweet-editor-input" type="text" placeholder="What's happening" />
+            {/* <input className="tweet-editor-input" type="text" placeholder="What's happening" /> */}
             <div className="tweet-editor-buttons">
                 <div className="tweet-editor-actions">
                     <Image src={Image1} />
