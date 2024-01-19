@@ -18,26 +18,22 @@ function ProfilePostDetails() {
 
 
   const Post = data.tweet.find((e) => e.id === id);
+console.log(Post);
+  // const allAuthorNames = data.tweet.map(tweet => tweet.authorName);
+// console.log(allAuthorNames);
+
+
+  // console.log(tweetsByAuthor);
 
 
 
+// on filtre dans data tous les post par rapport à Post.authorName
 
-
-  const tweetsByAuthor = data.tweet.reduce((acc, tweet) => {
-    const { authorName } = tweet;
-    if (!acc[authorName]) {
-      acc[authorName] = [];
-    }
-    acc[authorName].push(tweet);
-    return acc;
-  }, {});
-  
+  // Filtrer tous les tweets par rapport à l'auteur actuel
+  const tweetsByAuthor = data.tweet.filter(
+    (tweet) => tweet.authorName === Post.authorName
+  );
   console.log(tweetsByAuthor);
-
-
-
-
-
 
   return (
     <>
@@ -100,7 +96,7 @@ function ProfilePostDetails() {
         </div>
 
         <div className="tweets">
-            {data.tweet.map((item, index) => {
+            {tweetsByAuthor.map((item, index) => {
                 return (
                         <Tweet key={index}
                             Tweetavatar={item.imageavatar}
