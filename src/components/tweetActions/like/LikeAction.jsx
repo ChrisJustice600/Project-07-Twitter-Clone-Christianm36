@@ -10,11 +10,12 @@ import UserContext from '../../../context/UserContext';
 
 export default function LikeAction({ item }) {
 
-    const [isClicked, setIsClicked] = useState(false)
 
-    const { data, setData } = useContext(UserContext);
+    const { data, setData, isClicked, setIsClicked } = useContext(UserContext);
 
     const handleButtonClick = () => {
+        setIsClicked(!isClicked);
+
         // Cloner le tableau des tweets du contexte
         const updatedData = [...data.tweet];
         
@@ -29,7 +30,6 @@ export default function LikeAction({ item }) {
         console.log(updatedData);
         console.log(item.like);
         // Inverser l'état du bouton
-        setIsClicked(!isClicked);
     }
 
 
