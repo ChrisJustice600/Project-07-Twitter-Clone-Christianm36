@@ -20,7 +20,7 @@ export default function TweetActions({item}) {
                     <RepostAction repost={item.repost} />
                 </div>
                 <div className="tweet-action">
-                    <LikeAction like={item.like} />
+                    <LikeAction item={item} />
                 </div>
                 <div className="tweet-action">
                     <ShareAction />

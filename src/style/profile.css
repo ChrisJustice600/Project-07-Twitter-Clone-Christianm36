@@ -132,3 +132,18 @@
     background: rgba(113, 118, 123, 0.200);
 }
 
+
+
+/* -----RETOURN COMPONENT----- */
+.return-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.return-container:hover .image{
+    background: rgba(128, 128, 128, 0.692);
+    border-radius: 50%;
+}

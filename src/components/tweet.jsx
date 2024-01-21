@@ -7,7 +7,7 @@ import UserContext from "../context/UserContext";
 
 
 export default function Tweet({ item }) {
-   
+
     
     return (
         <div className="tweet">
@@ -35,8 +35,8 @@ export default function Tweet({ item }) {
                 </div>
 
                 <TweetActions item={item} />
-                          
-                </div>
+
+            </div>
         </div>
     )
 }

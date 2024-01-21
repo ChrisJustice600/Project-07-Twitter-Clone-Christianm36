@@ -4,7 +4,7 @@
 // profile
 import SideBar from "../../components/sideBar";
 import SideNav from "../../components/sideNav";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Return from "../../components/return";
 import data from "../../data.json"
 

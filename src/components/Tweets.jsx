@@ -18,16 +18,7 @@ export default function Tweets() {
                 return (
                         <Tweet key={index}
                         item={item}
-                            // Tweetavatar={item.imageavatar}
-                            // authorName={item.authorName}
-                            // authortag={item.authortag}
-                            // content={item.content}
-                            // date={item.date}
-                            // imagebg={item.imagebg}
-                            // reply={item.reply}
-                            // repost={item.repost}
-                            // like={item.like}
-                            // item={item.id}
+                
                         />
 
                 )
