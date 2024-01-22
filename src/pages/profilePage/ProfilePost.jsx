@@ -1,12 +1,7 @@
-
-
-
-// profile
 import SideBar from "../../components/sideBar";
 import SideNav from "../../components/sideNav";
 import { useParams } from "react-router-dom";
 import Return from "../../components/return";
-import data from "../../data.json"
 
 import { IoCalendarOutline } from "react-icons/io5";
 import Tweet from "../../components/tweet";
@@ -42,10 +37,6 @@ function ProfilePostDetails() {
     (tweet) => tweet.authorName === Post.authorName
   );
   const postlength = tweetsByAuthor.length
-  // console.log(postlength);
-  // console.log(tweetsByAuthor);
-
-
 
   return (
     <>
@@ -107,20 +98,15 @@ function ProfilePostDetails() {
           </div>
         </div>
 
-       
-
         <div className="tweets">
           {tweetsByAuthor.map((item, index) => {
             return (
               <Tweet key={index}
-              item={item}
+                item={item}
               />
-
             )
           })}
         </div>
-
-
       </div>
     </>
   );

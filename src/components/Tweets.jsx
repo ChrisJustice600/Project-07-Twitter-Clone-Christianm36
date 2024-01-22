@@ -6,8 +6,6 @@ import React, { useContext } from "react";
 
 
 
-
-
 export default function Tweets() {
     const user = useContext(UserContext);
     // console.log(user);
@@ -16,11 +14,10 @@ export default function Tweets() {
         <div className="tweets">
             {user.data.tweet.map((item, index) => {
                 return (
-                        <Tweet key={index}
+                    <Tweet key={index}
                         item={item}
-                
-                        />
 
+                    />
                 )
             })}
         </div>

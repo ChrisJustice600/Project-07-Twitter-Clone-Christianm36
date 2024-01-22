@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import SideBar from "../../components/sideBar";
 import SideNav from "../../components/sideNav";
 import { Link } from "react-router-dom";
@@ -6,22 +6,29 @@ import Return from "../../components/return";
 
 import MonProfile from "../../iconprofile/mon-profile.jpg";
 import { IoCalendarOutline } from "react-icons/io5";
+import UserContext from "../../context/UserContext";
+
+
 
 function ProfileDetails() {
+  const { data } = useContext(UserContext)
+
+  const profileData = data.currentUser
+  console.log(profileData);
   return (
     <>
       <div>
         <div className="author-profile">
           <Return linkValue='/home' />
           <div className="author-name">
-            <div className="name">Christian mabeladi</div>
-            <div className="author-post-number">0 Post</div>
+            <div className="name">{profileData.authorName}</div>
+            <div className="author-post-number">{profileData.post} Post</div>
           </div>
         </div>
         <div className="banner-profile">
           <div className="image-profile">
             <Link to="/home">
-              <img src={MonProfile} />
+              <img src={"src/iconprofile/" + profileData.profileavatar} />
             </Link>
           </div>
         </div>
@@ -31,8 +38,8 @@ function ProfileDetails() {
         </div>
         <div className="profile-informations">
           <div className="info-name">
-            <div className="name">Christian mabeladi</div>
-            <div className="tag">@JusticeChrisM</div>
+            <div className="name">{profileData.authorName}</div>
+            <div className="tag">{profileData.authortag}</div>
           </div>
           <div className="date-joined">
             <span>
@@ -42,10 +49,10 @@ function ProfileDetails() {
           </div>
           <div className="section-follow-profile">
             <div className="following">
-              <span>5</span>Following
+              <span>{profileData.following}</span>Following
             </div>
             <div className="follower">
-              <span>2</span>Follower
+              <span>{profileData.follower}</span>Follower
             </div>
           </div>
         </div>

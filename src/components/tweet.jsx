@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom"
 import Verified from "../images/Verified.png"
 import TweetActions from "./tweetActions/TweetActions"
-import UserContext from "../context/UserContext";
-
-// item, Tweetavatar, authorName, authortag, imagebg, content, date, reply, repost, like
 
 
 export default function Tweet({ item }) {

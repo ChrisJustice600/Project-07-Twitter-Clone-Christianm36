@@ -1,29 +1,23 @@
 import React, { useState } from 'react'
-
 import("./style.css")
 import { useContext } from "react";
 import UserContext from '../../../context/UserContext';
 
-
-
-
-
 export default function LikeAction({ item }) {
-
-
     const { data, setData, isClicked, setIsClicked } = useContext(UserContext);
+    
 
     const handleButtonClick = () => {
         setIsClicked(!isClicked);
 
         // Cloner le tableau des tweets du contexte
         const updatedData = [...data.tweet];
-        
+
         // Trouver l'index du tweet à mettre à jour dans le tableau cloné
         const tweetIndex = updatedData.findIndex((tweet) => tweet.id === item.id);
 
         // Mettre à jour le nombre de likes dans le tableau cloné
-        updatedData[tweetIndex].like = isClicked ? parseInt(item.like) - 1 : parseInt(item.like)  + 1;
+        updatedData[tweetIndex].like = isClicked ? parseInt(item.like) - 1 : parseInt(item.like) + 1;
 
         // Mettre à jour le contexte avec le nouveau tableau de tweets
         setData({ ...data, tweet: updatedData });
@@ -31,11 +25,6 @@ export default function LikeAction({ item }) {
         console.log(item.like);
         // Inverser l'état du bouton
     }
-
-
-
-
-
     return (
         <div className={`like custom-fill ${isClicked ? 'clicked' : ''}`} onClick={handleButtonClick} >
             <span className='like-custom all'>

@@ -1,4 +1,13 @@
 {
+  "currentUser": {
+    "profileavatar": "mon-profile.jpg",
+    "authorName": "Christian Mabeladi",
+    "authortag": "@JusticeChrisM",
+    "post": "0",
+    "following": "0",
+    "follower": "0",
+    "joined": ""
+  },
   "tweet": [
     {
       "id": "1",
