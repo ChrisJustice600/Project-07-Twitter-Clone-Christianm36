@@ -109,12 +109,9 @@ body {
     gap: 1rem;
 }
 
-.tweet-editor-actions button {
-    background-color: transparent;
-    border: none;
-}
 
-.button {
+
+.buttontweet{
     text-transform: capitalize;
     padding: .7rem 1.5rem;
     border: none;

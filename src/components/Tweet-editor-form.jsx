@@ -49,7 +49,7 @@ export default function TweetEditorForm() {
                     <Image src={Image4} />
                     <Image src={Image5} />
                 </div>
-                <div className="button w-12">
+                <div className="buttontweet">
                     <span>Tweet</span>
                 </div>
             </div>

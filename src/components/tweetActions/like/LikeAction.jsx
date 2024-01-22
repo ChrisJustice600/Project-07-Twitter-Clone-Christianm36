@@ -14,22 +14,22 @@ export default function LikeAction({ item }) {
 
     const { data, setData } = useContext(UserContext);
 
+    // Cloner le tableau des tweets du contexte
     const updatedData = [...data.tweet];
-    
+
     // Trouver l'index du tweet à mettre à jour dans le tableau cloné
     const tweetIndex = updatedData.findIndex((tweet) => tweet.id === item.id);
+    
     const handleButtonClick = () => {
-        // Cloner le tableau des tweets du contexte
 
         // Mettre à jour le nombre de likes dans le tableau cloné
-        updatedData[tweetIndex].like = !updatedData[tweetIndex].islike ? parseInt(item.like) + 1 : parseInt(item.like)  - 1;
+        updatedData[tweetIndex].like = !updatedData[tweetIndex].islike ? parseInt(item.like) + 1 : parseInt(item.like) - 1;
         updatedData[tweetIndex].islike = !updatedData[tweetIndex].islike
         // Mettre à jour le contexte avec le nouveau tableau de tweets
         setData({ ...data, tweet: updatedData });
         console.log(updatedData);
         console.log(item.like);
-        // Inverser l'état du bouton
-        // setIsClicked(!isClicked);
+
         console.log(updatedData[tweetIndex].islike);
     }
 

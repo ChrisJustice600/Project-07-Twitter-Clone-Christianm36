@@ -160,7 +160,7 @@ ul .trend-list,
   margin-left: 1.6rem;
   margin-right: 2.6rem;
   font-family: "Inter", sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .form-side-bar {
@@ -191,10 +191,6 @@ ul .trend-list,
   font-size: 1.4rem;
 }
 
-.twitter-logo {
-  margin-bottom: 25px;
-  margin-left: 20px;
-}
 
 .btn-twitter {
   border-radius: 50px;

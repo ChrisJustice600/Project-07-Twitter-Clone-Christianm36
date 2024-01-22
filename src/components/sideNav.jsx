@@ -26,8 +26,8 @@ export default function SideNav() {
   ];
 
   return (
-      <div className="container">
-        <div className="twitter-logo">
+      <div className="p-[7px] mr-2.6 text-1rem font-bold font-inter h-full sticky top-0 bottom-0 left-0">
+        <div className="mb-[25px] ml-[20px]">
           <img src={TwitterWhite} />
           <span></span>
         </div>
