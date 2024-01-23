@@ -69,13 +69,6 @@ body {
 
 .avatar {
     flex: 0 0 70px;
-    /*padding: 0 rem;*/
-}
-
-.avatar img {
-    max-width: 100%;
-    max-height: 100px;
-    border-radius: 100%;
 }
 
 .tweet-editor-form {

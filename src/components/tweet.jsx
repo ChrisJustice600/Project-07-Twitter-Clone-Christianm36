@@ -2,12 +2,16 @@ import { Link } from "react-router-dom"
 import Verified from "../images/Verified.png"
 import TweetActions from "./tweetActions/TweetActions"
 
+import React, { useContext } from "react";
+import UserContext from "../context/UserContext";
 
 export default function Tweet({ item }) {
 
     
+console.log(item);
     return (
         <div className="tweet">
+
             <Link to={`/${item.id}`}>
                 <img src={"src/images/" + item.imageavatar} className="tweet-avatar" />
             </Link>

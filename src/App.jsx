@@ -17,13 +17,10 @@ import("./style/profile.css");
 
 export default function App() {
   const [data, setData] = useState(database)
-  // const [isClicked, setIsClicked] = useState(false)
-
 
 
   return (
-    <UserContext.Provider value={{ data, setData}} >
-    {/* // <UserContext.Provider value={{ data }} > */}
+    <UserContext.Provider value={{ data, setData }} >
       <Layout>
         <BrowserRouter>
           <Routes>

@@ -11,27 +11,14 @@ import React, { useContext } from "react";
 import UserContext from "../../context/UserContext";
 
 function ProfilePostDetails() {
-  const { id } = useParams();
 
+
+
+  const { id } = useParams();
   const user = useContext(UserContext);
 
   const Post = user.data.tweet.find((e) => e.id === id);
-  // console.log(Post);
-  // const allAuthorNames = data.tweet.map(tweet => tweet.authorName);
-  // console.log(allAuthorNames);
 
-
-
-  // const tweetsByAuthor = data.tweet.reduce((acc, tweet) => {
-  //   const { authorName } = tweet;
-  //   if (!acc[authorName]) {
-  //     acc[authorName] = [];
-  //   }
-  //   acc[authorName].push(tweet);
-  //   return acc;
-  // }, {});
-
-  // console.log(tweetsByAuthor);
 
   const tweetsByAuthor = user.data.tweet.filter(
     (tweet) => tweet.authorName === Post.authorName
