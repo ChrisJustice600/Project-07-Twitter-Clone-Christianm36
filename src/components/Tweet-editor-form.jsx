@@ -9,7 +9,7 @@ import { useState } from "react";
 const Image = ({ src }) => {
     return (
         <img
-        src={src}
+            src={src}
         />
     );
 };
@@ -18,26 +18,49 @@ export default function TweetEditorForm() {
     const [text, setText] = useState('');
 
     const formatText = (event) => {
-      const originalText = event.target.value;
-  
-      // Diviser le texte en lignes de 20 caractères
-      const lines = originalText.match(/.{1,34}/g);
-  
-      // Mettre à jour le texte dans l'état local avec le texte formaté
-      if (lines) {
-        setText(lines.join('\n'));
-      } else {
-        setText('');
-      }
+        const originalText = event.target.value;
+
+    //       let addObjet = [{
+    //         id: "0",
+    //         imageavatar: "",
+    //         authorName: "",
+    //         authortag: "",
+    //         date: "7min",
+    //         content: null,
+    //         imagebg: "",
+    //         reply: "19",
+    //         repost: "144",
+    //         like: "184",
+    //         bio: "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps",
+    //         islike: false
+    //       }]
+    //     //   console.log(CopyAddObjet[0]);
+    //     // let tab = []
+    //     let modif = addObjet[0].content
+    //     modif = originalText
+
+
+
+        // Diviser le texte en lignes de 20 caractères
+        const lines = originalText.match(/.{1,36}/g);
+
+        // Mettre à jour le texte dans l'état local avec le texte formaté
+        if (lines) {
+            setText(lines.join('\n'));
+        } else {
+            setText('');
+        }
     };
+
+
 
     return (
         <div className="tweet-editor-form">
             <textarea
-            className="tweet-editor-input"
+                className="tweet-editor-input"
                 value={text}
                 onChange={formatText}
-                placeholder="What's happening" 
+                placeholder="What's happening"
                 style={{ overflowY: 'hidden' }}
             />
             {/* <input className="tweet-editor-input" type="text" placeholder="What's happening" /> */}

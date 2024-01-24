@@ -28,7 +28,7 @@ export default function App() {
               <Route index element={<Tweets />} />
             </Route>
             <Route path="/profile" element={<Profile />} />
-            <Route path=":id" element={<ProfilePost />} />
+            <Route path=":userName" element={<ProfilePost />} />
           </Routes>
         </BrowserRouter>
       </Layout>

@@ -14,16 +14,14 @@ function ProfilePostDetails() {
 
 
 
-  const { id } = useParams();
+  const { userName } = useParams();
   const user = useContext(UserContext);
-
-  const Post = user.data.tweet.find((e) => e.id === id);
-
-
-  const tweetsByAuthor = user.data.tweet.filter(
-    (tweet) => tweet.authorName === Post.authorName
-  );
-  const postlength = tweetsByAuthor.length
+  // const Post = user.data.tweet.find((e) => e.authorName === authorName);
+  // console.log(Post);
+  const Post = user.data.tweet.filter((e) => e.userName === userName);
+  const filterName = Post
+  
+  const postlength = Post.length
 
   return (
     <>
@@ -31,7 +29,7 @@ function ProfilePostDetails() {
         <div className="author-profile">
           <Return linkValue='/home' />
           <div className="author-name">
-            <div className="name">{Post.authorName}</div>
+            <div className="name">{filterName[0].authorName}</div>
             <div className="author-post-number">{postlength} Post</div>
           </div>
         </div>
@@ -39,7 +37,7 @@ function ProfilePostDetails() {
           <img src="" alt="" />
           <div className="image-profile">
 
-            <img src={"src/images/" + Post.imageavatar} />
+            <img src={"src/images/" + filterName[0].imageavatar} />
           </div>
         </div>
         <div className="edit-profile">
@@ -48,9 +46,9 @@ function ProfilePostDetails() {
         </div>
         <div className="profile-informations">
           <div className="info-name">
-            <div className="name">{Post.authorName}</div>
-            <div className="tag">{Post.authortag}</div>
-            <div className="tag">{Post.bio}</div>
+            <div className="name">{filterName[0].authorName}</div>
+            <div className="tag">{filterName[0].authortag}</div>
+            <div className="tag">{filterName[0].bio}</div>
           </div>
           <div className="date-joined">
             <span>
@@ -86,7 +84,7 @@ function ProfilePostDetails() {
         </div>
 
         <div className="tweets">
-          {tweetsByAuthor.map((item, index) => {
+          {Post.map((item, index) => {
             return (
               <Tweet key={index}
                 item={item}
