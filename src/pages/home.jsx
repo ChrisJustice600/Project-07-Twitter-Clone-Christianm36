@@ -10,7 +10,7 @@ function Home() {
   return (
     <>
       <SideNav />
-      <main className="timeline">
+      <main class="flex-shrink-0 flex-grow-0 w-[600px] border-l border-r border-solid border-[#2F3336]">
         <TimeLine />
       </main>
       <SideBar />

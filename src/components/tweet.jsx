@@ -2,35 +2,34 @@ import { Link } from "react-router-dom"
 import Verified from "../images/Verified.png"
 import TweetActions from "./tweetActions/TweetActions"
 
-import React, { useContext } from "react";
-import UserContext from "../context/UserContext";
+
 
 export default function Tweet({ item }) {
 
-    
-console.log(item);
+
+    console.log(item);
     return (
-        <div className="tweet">
+        <div class="flex justify-start items-start gap-[20px] p-[1rem] border-b border-solid border-[#2F3336]">
 
             <Link to={`/${item.userName}`}>
-                <img src={"src/images/" + item.imageavatar} className="tweet-avatar" />
+                <img src={"src/images/" + item.imageavatar} className="flex-shrink-0 flex-grow-0 w-70" />
             </Link>
-            <div className="tweet-content">
-                <div className="tweet-body">
-                    <div className="tweet-title">
+            <div class="flex flex-col items-start justify-start gap-[20px] w-full">
+                <div class="flex flex-col gap-[0.5rem]">
+                    <div class="flex justify-start items-start gap-[10px] text-[1rem]">
                         <Link to={`/${item.userName}`}>
-                            <h3 className="tweet-title-author">{item.authorName}</h3>
+                            <h3 className="text-[1rem]">{item.authorName}</h3>
                         </Link>
                         <img src={Verified} />
                         <Link to={`/${item.userName}`}>
-                            <span className="tweet-title-details">{item.authortag}</span>
+                            <span className="text-[#6E767D]">{item.authortag}</span>
                         </Link>
-                        <span className="tweet-title-details">.</span>
-                        <span className="tweet-title-details">{item.date}</span>
+                        <span className="text-[#6E767D]">.</span>
+                        <span className="text-[#6E767D]">{item.date}</span>
                     </div>
-                    <div className="tweet-text">{item.content}</div>
-                    <div className="tweet-image">
-                        {item.imagebg && <img src={"src/images/" + item.imagebg} />
+                    <div className="text-[#D9D9D9]">{item.content}</div>
+                    <div className="w-full pt-[1.5rem]">
+                        {item.imagebg && <img class="max-w-full h-auto rounded-[50px] border border-solid border-[#2F3336]" src={"src/images/" + item.imagebg} />
                         }
                     </div>
                 </div>

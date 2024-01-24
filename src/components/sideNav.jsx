@@ -15,7 +15,6 @@ function ButtonTwitter(){
 
 export default function SideNav() {
   const {currentUser} = database
-console.log(currentUser);
   // navItems
   const navItems = [
     { icon: "src/iconSide/home.svg", link: "Home", path: "/home" },

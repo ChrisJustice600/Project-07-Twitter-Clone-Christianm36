@@ -3,7 +3,7 @@ import TweetEditorForm from "./Tweet-editor-form"
 
 export default function TweetEditor() {
     return (
-        <div className="tweet-editor">
+        <div className="flex items-start justify-start gap-20 p-1rem border-b border-solid border-gray-700">
             <AvatarProfile />
             <TweetEditorForm />
         </div>

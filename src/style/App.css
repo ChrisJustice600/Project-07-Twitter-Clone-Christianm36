@@ -20,6 +20,7 @@ a {
     justify-content: space-between;
 }
 
+
 body {
     background-color: black;
     color: white;
@@ -91,13 +92,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .tweet-editor-actions {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /*padding: 0.8rem 0;*/
     gap: 1rem;
 }
 
@@ -123,8 +125,7 @@ body {
 }
 
 .tweet-avatar {
-    /*height: 70px;*/
-    /*width: 70px;*/
+ 
     flex: 0 0 70px;
 }
 
