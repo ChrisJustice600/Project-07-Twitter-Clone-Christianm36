@@ -2,6 +2,7 @@ import Home from "../iconSide/home.svg";
 import TwitterWhite from "../iconSide/Twitter-white.svg";
 import { NavLink } from "react-router-dom";
 import ProfileBottom from "./profileBottom";
+import database from "../data.json";
 
 
 function ButtonTwitter(){
@@ -13,6 +14,8 @@ function ButtonTwitter(){
 
 
 export default function SideNav() {
+  const {currentUser} = database
+console.log(currentUser);
   // navItems
   const navItems = [
     { icon: "src/iconSide/home.svg", link: "Home", path: "/home" },
@@ -21,7 +24,7 @@ export default function SideNav() {
     { icon: "src/iconSide/message.svg", link: "Message", path: "" },
     { icon: "src/iconSide/bookmarks.svg", link: "Bookmarks", path: "" },
     { icon: "src/iconSide/list.png", link: "Lists", path: "" },
-    { icon: "src/iconSide/profile.png", link: "Profile", path: "/profile" },
+    { icon: "src/iconSide/profile.png", link: "Profile", path: `/${currentUser.userName}` },
     { icon: "src/iconSide/more.png", link: "More", path: "" },
   ];
 
