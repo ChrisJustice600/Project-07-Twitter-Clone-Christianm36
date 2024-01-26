@@ -7,8 +7,16 @@
 
 .like:hover span,
 .like.custom-fill:hover svg path {
-  color: #F91880; /* Couleur de survol pour le span */
-  fill: #F91880; /* Couleur de survol pour le chemin du SVG */
+  color: #f91880; /* Couleur de survol pour le span */
+  fill: #f91880; /*Couleur de survol pour le chemin du SVG */
+}
+.like-custom svg.svg-fill path {
+  color: #f91880; /* Couleur de survol pour le span */
+  fill: #f91880; /*Couleur de survol pour le chemin du SVG */
+}
+.like-custom svg.svg-fill {
+  width: 26px;
+  height: 26px;
 }
 
 .like .like-custom {
@@ -22,13 +30,8 @@
   background: #f918802f;
   border-radius: 50%;
 
-}
-span.all svg{
+}  span.all svg{
   width: 26px;
   height: 26px;
-}
+} 
 
-.clicked svg{
-  background-color: #F91880;
-
-}
