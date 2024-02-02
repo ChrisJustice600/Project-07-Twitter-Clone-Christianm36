@@ -27,27 +27,6 @@ export default function TweetActions({ item }) {
                 </div>
             </div>
         </>
-        // <>
-        //     {
-        //         user.data.tweet.map((item, index) => {
-        //             <div className="tweet-actions">
-        //                 <div className="tweet-action">
-        //                     <ReplyAction key={index} item={item} />
-        //                 </div>
-        //                 <div className="tweet-action">
-        //                     <RepostAction key={index} item={item} />
-        //                 </div>
-        //                 <div className="tweet-action">
-        //                     <LikeAction key={index} item={item} />
-        //                 </div>
-        //                 <div className="tweet-action">
-        //                     <ShareAction />
-        //                 </div>
-        //             </div>
-        //         })
-        //     }
-        // </>
-
 
     )
 }

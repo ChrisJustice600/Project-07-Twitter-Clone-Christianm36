@@ -17,17 +17,20 @@ import("./style/profile.css");
 
 export default function App() {
   const [data, setData] = useState(database)
-  const {currentUser} = database
+  const { "current-user": currentUser } = database;
 
   return (
     <UserContext.Provider value={{ data, setData }} >
       <Layout>
         <BrowserRouter>
           <Routes>
-            <Route path="/home" element={<Home  />}>
+            <Route path="/home" element={<Home />}>
               <Route index element={<Tweets />} />
             </Route>
-            <Route path={`/${currentUser.userName}`} element={<Profile />} />
+            <Route
+              path={`/${currentUser && currentUser.length > 0 ? currentUser[0].author.username : ''}`}
+              element={currentUser && currentUser.length > 0 ? <Profile /> : null}
+            />
             <Route path=":userName" element={<ProfilePost />} />
           </Routes>
         </BrowserRouter>

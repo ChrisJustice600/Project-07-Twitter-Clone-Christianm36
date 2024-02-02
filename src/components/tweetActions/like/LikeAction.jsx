@@ -15,7 +15,7 @@ export default function LikeAction({ item }) {
     const { data, setData } = useContext(UserContext);
 
     // Cloner le tableau des tweets du contexte
-    const updatedData = [...data.tweet];
+    const updatedData = [...data.tweets];
 
     // Trouver l'index du tweet à mettre à jour dans le tableau cloné
     const tweetIndex = updatedData.findIndex((tweet) => tweet.id === item.id);
@@ -26,7 +26,7 @@ export default function LikeAction({ item }) {
         updatedData[tweetIndex].like = !updatedData[tweetIndex].islike ? parseInt(item.like) + 1 : parseInt(item.like) - 1;
         updatedData[tweetIndex].islike = !updatedData[tweetIndex].islike
         // Mettre à jour le contexte avec le nouveau tableau de tweets
-        setData({ ...data, tweet: updatedData });
+        setData({ ...data, tweets: updatedData });
         console.log(updatedData);
         console.log(item.like);
 

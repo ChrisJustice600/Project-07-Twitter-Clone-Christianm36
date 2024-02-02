@@ -20,8 +20,8 @@ export default function TweetEditorForm() {
     const { data, setData } = useContext(UserContext);
 
     // Cloner le tableau des tweets du contexte
-    const updatedData = [...data.tweet];
-
+    const updatedData = [...data.tweets];
+    
     const formatText = (event) => {
         const originalText = event.target.value;
         const lines = originalText.match(/.{1,40}/g);
@@ -33,24 +33,23 @@ export default function TweetEditorForm() {
         }
     };
 
-console.log(data.currentUser.userName);
 
     const content = text.trim();
-    let addObjet = {
-        id: "0",
-        imageavatar: "",
-        userName: data.currentUser.userName,
-        authorName: "",
-        authortag: "",
-        date: "7min",
-        content: content,
-        imagebg: "",
-        reply: "19",
-        repost: "144",
-        like: "184",
-        bio: "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps",
-        islike: false
-    };
+    // let addObjet = {
+    //     id: "0",
+    //     imageavatar: "",
+    //     userName: data.currentUser.userName,
+    //     authorName: "",
+    //     authortag: "",
+    //     date: "7min",
+    //     content: content,
+    //     imagebg: "",
+    //     reply: "19",
+    //     repost: "144",
+    //     like: "184",
+    //     bio: "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps",
+    //     islike: false
+    // };
 
     const handleTweetClick = () => {
         // Récupérer le contenu du texte
@@ -61,7 +60,7 @@ console.log(data.currentUser.userName);
 
             updatedData.unshift(addObjet);
 
-            setData({ ...data, tweet: updatedData });
+            setData({ ...data, tweets: updatedData });
             setText('');
         }
     };

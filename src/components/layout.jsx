@@ -1,6 +1,5 @@
 import React from "react";
-import SideNav from "./sideNav";
-import SideBar from "./sideBar";
+
 
 function Layout({ children }) {
   return (

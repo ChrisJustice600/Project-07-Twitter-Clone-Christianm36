@@ -7,7 +7,6 @@ import TweetActions from "./tweetActions/TweetActions"
 export default function Tweet({ item }) {
 
 
-    console.log(item);
     return (
         <div class="flex justify-start items-start gap-[20px] p-[1rem] border-b border-solid border-[#2F3336]">
 

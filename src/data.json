@@ -1,24 +1,37 @@
 {
-  "currentUser": {
-    "profileavatar": "mon-profile.jpg",
-    "userName": "ChrisJusticeM",
-    "authorName": "Christian Mabeladi",
-    "authortag": "@JusticeChrisM",
-    "post": "0",
-    "following": "0",
-    "follower": "0",
-    "joined": ""
-  },
-  "tweet": [
+  "current-user": [
     {
       "id": "1",
-      "imageavatar": "tweet-profile-photo.png",
-      "userName": "cnn",
-      "authorName": "CNN",
-      "authortag": "@cnn",
+      "author": {
+        "id": "chrisjusticem",
+        "avatar": "mon-profile.jpg",
+        "username": "ChrisJusticeM",
+        "name": "CNN",
+        "tag": "@cnn"
+      },
       "date": "7min",
       "content": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
-      "imagebg": "",
+      "image": "",
+      "reply": "19",
+      "repost": "144",
+      "like": "184",
+      "bio": "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps",
+      "islike": false
+    }
+  ],
+  "tweets": [
+    {
+      "id": "1",
+      "author": {
+        "id": "cnn",
+        "avatar": "tweet-profile-photo.png",
+        "username": "cnn",
+        "name": "CNN",
+        "tag": "@cnn"
+      },
+      "date": "7min",
+      "content": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
+      "image": "",
       "reply": "19",
       "repost": "144",
       "like": "184",
@@ -27,59 +40,75 @@
     },
     {
       "id": "2",
-      "imageavatar": "Profile-Photo-new-york.png",
-      "userName": "nytimes",
-      "authorName": "The New York Times",
-      "authortag": "@nytimes",
+      "author": {
+        "id": "nytimes",
+        "avatar": "Profile-Photo-new-york.png",
+        "username": "nytimes",
+        "name": "The New York Times",
+        "tag": "@nytimes"
+      },
       "date": "2h",
       "content": "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land.",
-      "imagebg": "tweet-image.png",
+      "image": "tweet-image.png",
       "reply": "60",
       "repost": "245k",
       "like": "111",
-      "bio": "News tips? Share them here: http://nyti.ms/2FVHq9v"
+      "bio": "News tips? Share them here: http://nyti.ms/2FVHq9v",
+      "islike": false
     },
     {
       "id": "3",
-      "imageavatar": "tweet-profile-photo.png",
-      "userName": "cnn",
-      "authorName": "CNN",
-      "authortag": "@cnn",
+      "author": {
+        "id": "cnn",
+        "avatar": "tweet-profile-photo.png",
+        "username": "cnn",
+        "name": "CNN",
+        "tag": "@cnn"
+      },
       "date": "7min",
       "content": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
-      "imagebg": "",
+      "image": "",
       "reply": "19",
       "repost": "144",
       "like": "184",
-      "bio": "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps"
+      "bio": "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps",
+      "islike": false
     },
     {
       "id": "4",
-      "imageavatar": "image 1.png",
-      "userName": "tweeter",
-      "authorName": "Tweeter",
-      "authortag": "@tweeter",
+      "author": {
+        "id": "tweeter",
+        "avatar": "image 1.png",
+        "username": "tweeter",
+        "name": "Tweeter",
+        "tag": "@tweeter"
+      },
       "date": "Oct 29",
       "content": "BIG NEWS lol jk still Twitter.",
-      "imagebg": "",
+      "image": "",
       "reply": "18",
       "repost": "99",
       "like": "22",
-      "bio": "what's happening?!"
+      "bio": "what's happening?!",
+      "islike": false
     },
     {
-      "id": "%",
-      "imageavatar": "image 1.png",
-      "userName": "tweeter",
-      "authorName": "Tweeter",
-      "authortag": "@tweeter",
+      "id": "5",
+      "author": {
+        "id": "tweeter",
+        "avatar": "image 1.png",
+        "username": "tweeter",
+        "name": "Tweeter",
+        "tag": "@tweeter"
+      },
       "date": "Oct 20",
       "content": "BIG NEWS lol jk still Twitter.",
-      "imagebg": "",
+      "image": "",
       "reply": "18",
       "repost": "99",
       "like": "22",
-      "bio": "what's happening?!"
+      "bio": "what's happening?!",
+      "islike": false
     }
   ]
 }
