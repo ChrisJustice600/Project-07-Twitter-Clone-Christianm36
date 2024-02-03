@@ -12,15 +12,13 @@ import UserContext from "../../context/UserContext";
 
 function ProfilePostDetails() {
 
-
-
-  const { userName } = useParams();
+  const { username } = useParams();
   const user = useContext(UserContext);
   // const Post = user.data.tweet.find((e) => e.authorName === authorName);
   // console.log(Post);
-  const Post = user.data.tweets.filter((e) => e.userName === userName);
+  const Post = user.data.tweets.filter((e) => e.author.username === username);
   const filterName = Post
-  
+
   const postlength = Post.length
 
   return (
@@ -29,7 +27,7 @@ function ProfilePostDetails() {
         <div className="author-profile">
           <Return linkValue='/home' />
           <div className="author-name">
-            <div className="name">{filterName[0].authorName}</div>
+            <div className="name">{filterName[0].author.name}</div>
             <div className="author-post-number">{postlength} Post</div>
           </div>
         </div>
@@ -37,7 +35,7 @@ function ProfilePostDetails() {
           <img src="" alt="" />
           <div className="image-profile">
 
-            <img src={"src/images/" + filterName[0].imageavatar} />
+            <img src={"src/images/" + filterName[0].author.avatar} />
           </div>
         </div>
         <div className="edit-profile">
@@ -46,9 +44,9 @@ function ProfilePostDetails() {
         </div>
         <div className="profile-informations">
           <div className="info-name">
-            <div className="name">{filterName[0].authorName}</div>
-            <div className="tag">{filterName[0].authortag}</div>
-            <div className="tag">{filterName[0].bio}</div>
+            <div className="name">{filterName[0].author.name}</div>
+            <div className="tag">{filterName[0].author.tag}</div>
+            <div className="tag">{filterName[0].author.bio}</div>
           </div>
           <div className="date-joined">
             <span>

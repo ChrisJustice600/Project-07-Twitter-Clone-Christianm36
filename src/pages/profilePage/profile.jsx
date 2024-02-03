@@ -13,7 +13,7 @@ import UserContext from "../../context/UserContext";
 function ProfileDetails() {
   const { data } = useContext(UserContext)
 
-  const profileData = data.currentUser
+  const profileData = data.currentUser[0].author
   console.log(profileData);
   return (
     <>
@@ -21,14 +21,14 @@ function ProfileDetails() {
         <div className="author-profile">
           <Return linkValue='/home' />
           <div className="author-name">
-            <div className="name">{profileData.authorName}</div>
-            <div className="author-post-number">{profileData.post} Post</div>
+            <div className="name">{profileData.name}</div>
+            <div className="author-post-number">{profileData.post}0 Post</div>
           </div>
         </div>
         <div className="banner-profile">
           <div className="image-profile">
             <Link to="/home">
-              <img src={"src/iconprofile/" + profileData.profileavatar} />
+              <img src={"src/iconprofile/" + profileData.avatar} />
             </Link>
           </div>
         </div>
@@ -38,8 +38,8 @@ function ProfileDetails() {
         </div>
         <div className="profile-informations">
           <div className="info-name">
-            <div className="name">{profileData.authorName}</div>
-            <div className="tag">{profileData.authortag}</div>
+            <div className="name">{profileData.name}</div>
+            <div className="tag">{profileData.tag}</div>
           </div>
           <div className="date-joined">
             <span>

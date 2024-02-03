@@ -17,8 +17,7 @@ import("./style/profile.css");
 
 export default function App() {
   const [data, setData] = useState(database)
-  const { "current-user": currentUser } = database;
-
+  const { currentUser } = database;
   return (
     <UserContext.Provider value={{ data, setData }} >
       <Layout>
@@ -28,10 +27,10 @@ export default function App() {
               <Route index element={<Tweets />} />
             </Route>
             <Route
-              path={`/${currentUser && currentUser.length > 0 ? currentUser[0].author.username : ''}`}
-              element={currentUser && currentUser.length > 0 ? <Profile /> : null}
+              path={`/${currentUser[0].author.username}`}
+              element={<Profile />}
             />
-            <Route path=":userName" element={<ProfilePost />} />
+            <Route path=":username" element={<ProfilePost />} />
           </Routes>
         </BrowserRouter>
       </Layout>
