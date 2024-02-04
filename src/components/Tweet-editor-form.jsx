@@ -20,8 +20,52 @@ export default function TweetEditorForm() {
     const { data, setData } = useContext(UserContext);
 
     // Cloner le tableau des tweets du contexte
-    const updatedData = [...data.tweets];
-    
+const updatedData = [...data.tweets];
+// créer une fonction d'ajout des tweets
+function addTweets() {
+  // récupérer les infos de currentUser
+  const currentUserInfo = data.currentUser[0];
+
+  // créer un nouveau tweet
+  const newTweet = {
+    id: (updatedData.length + 1).toString(),
+    author: {
+      id: currentUserInfo.author.id,
+      avatar: currentUserInfo.author.avatar,
+      username: currentUserInfo.author.username,
+      name: currentUserInfo.author.name,
+      tag: currentUserInfo.author.tag,
+    },
+    date: "maintenant", // Vous devrez définir la date réelle ici
+    content: text,
+    image: "",
+    reply: "0",
+    repost: "0",
+    like: "0",
+    bio: currentUserInfo.bio,
+    islike: false,
+  };
+
+
+  //   // Ajouter le nouveau tweet à la liste de tweets
+  updatedData.unshift(newTweet);
+  setData({ ...data, tweets: updatedData });
+  setText('');
+
+
+  //   // Afficher la base de données mise à jour
+  console.log(updatedData);
+
+}
+
+
+
+
+
+
+
+
+
     const formatText = (event) => {
         const originalText = event.target.value;
         const lines = originalText.match(/.{1,40}/g);
@@ -34,36 +78,20 @@ export default function TweetEditorForm() {
     };
 
 
-    const content = text.trim();
-    // let addObjet = {
-    //     id: "0",
-    //     imageavatar: "",
-    //     userName: data.currentUser.userName,
-    //     authorName: "",
-    //     authortag: "",
-    //     date: "7min",
-    //     content: content,
-    //     imagebg: "",
-    //     reply: "19",
-    //     repost: "144",
-    //     like: "184",
-    //     bio: "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps",
-    //     islike: false
+    // const content = text.trim();
+    // const handleTweetClick = () => {
+    //     // Récupérer le contenu du texte
+
+
+    //     if (content) {
+    //         console.log(content);
+
+    //         updatedData.unshift(addObjet);
+
+    //         setData({ ...data, tweets: updatedData });
+    //         setText('');
+    //     }
     // };
-
-    const handleTweetClick = () => {
-        // Récupérer le contenu du texte
-      
-
-        if (content) {
-            console.log(content);
-
-            updatedData.unshift(addObjet);
-
-            setData({ ...data, tweets: updatedData });
-            setText('');
-        }
-    };
 
 
     return (
@@ -84,7 +112,7 @@ export default function TweetEditorForm() {
                     <Image src={Image4} />
                     <Image src={Image5} />
                 </div>
-                <div onClick={handleTweetClick} class="capitalize cursor-pointer px-4 py-2 border-none rounded-full bg-blue-500 text-white text-1rem">
+                <div onClick={addTweets} class="capitalize cursor-pointer px-4 py-2 border-none rounded-full bg-blue-500 text-white text-1rem">
                     <span>Tweet</span>
                 </div>
             </div>
