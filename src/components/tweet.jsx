@@ -9,7 +9,9 @@ export default function Tweet({ item }) {
         <div class="flex justify-start items-start gap-[20px] p-[1rem] border-b border-solid border-[#2F3336]">
 
             <Link to={`/${item.author.username}`}>
-                <img src={"src/images/" + item.author.avatar} className="flex-shrink-0 flex-grow-0 w-70" />
+                <div className="tweetavatar">
+                    <img src={"src/images/" + item.author.avatar} className="tweetavatar flex-shrink-0 flex-grow-0 w-70" />
+                </div>
             </Link>
             <div class="flex flex-col items-start justify-start gap-[20px] w-full">
                 <div class="flex flex-col gap-[0.5rem]">
