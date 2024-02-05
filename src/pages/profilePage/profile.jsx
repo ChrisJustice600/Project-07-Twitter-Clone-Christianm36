@@ -4,9 +4,9 @@ import SideNav from "../../components/sideNav";
 import { Link } from "react-router-dom";
 import Return from "../../components/return";
 
-import MonProfile from "../../iconprofile/mon-profile.jpg";
 import { IoCalendarOutline } from "react-icons/io5";
 import UserContext from "../../context/UserContext";
+import Tweet from "../../components/tweet";
 
 
 
@@ -14,7 +14,10 @@ function ProfileDetails() {
   const { data } = useContext(UserContext)
 
   const profileData = data.currentUser[0].author
-  console.log(profileData);
+  const profileuser = data.currentUser[0].author.username
+  const Post = data.tweets.filter((e) => e.author.username === profileuser);
+  // console.log(Post);
+  // const filterName = Post
   return (
     <>
       <div>
@@ -72,6 +75,15 @@ function ProfileDetails() {
           <div>
             <span>Likes</span>
           </div>
+        </div>
+        <div className="tweets">
+          {Post.map((item, index) => {
+            return (
+              <Tweet key={index}
+                item={item}
+              />
+            )
+          })}
         </div>
       </div>
     </>
