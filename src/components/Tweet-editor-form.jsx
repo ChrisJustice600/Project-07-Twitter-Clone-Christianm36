@@ -68,7 +68,7 @@ function addTweets() {
 
     const formatText = (event) => {
         const originalText = event.target.value;
-        const lines = originalText.match(/.{1,40}/g);
+        const lines = originalText.match(/.{1,100}/g);
 
         if (lines) {
             setText(lines.join('\n'));
