@@ -28,7 +28,7 @@ function ProfileDetails() {
         <div className="banner-profile">
           <div className="image-profile">
             <Link to="/home">
-              <img src={"src/iconprofile/" + profileData.avatar} />
+              <img src={"src/images/" + profileData.avatar} />
             </Link>
           </div>
         </div>
