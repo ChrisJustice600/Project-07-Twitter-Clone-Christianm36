@@ -4,7 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 /* Genral  */
-
+.color{
+    color: #f91880;
+}
 
 .tweetavatar{
     width: 80px;

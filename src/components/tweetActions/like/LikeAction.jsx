@@ -27,19 +27,15 @@ export default function LikeAction({ item }) {
         updatedData[tweetIndex].islike = !updatedData[tweetIndex].islike
         // Mettre à jour le contexte avec le nouveau tableau de tweets
         setData({ ...data, tweets: updatedData });
-        console.log(updatedData);
-        console.log(item.like);
-
-        console.log(updatedData[tweetIndex].islike);
     }
 
-
+console.log(item.islike);
 
 
 
     return (
         <div className={`like custom-fill ${updatedData[tweetIndex].islike ? 'clicked' : ''}`} onClick={handleButtonClick} >
-    
+
             <span className='like-custom all'>
                 {updatedData[tweetIndex].islike ? (
                     <svg className='svg-fill' width="40" height="40" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +54,7 @@ export default function LikeAction({ item }) {
                     </svg>
                 )}
             </span>
-            <span>{item.like}</span>
+            <span className={`${updatedData[tweetIndex].islike ? 'color' : ''}`}>{item.like}</span>
         </div>
     )
 }
