@@ -2,12 +2,11 @@ import Home from "./pages/home.jsx";
 import Layout from "./components/layout.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Profile from "./pages/profilePage/profile.jsx";
-import database from "./data.json";
-// import data from "./data.json";
 import Tweets from "./components/Tweets.jsx";
 import ProfilePost from "./pages/profilePage/ProfilePost.jsx";
 import UserContext from "./context/UserContext.js";
 import { useEffect, useState } from "react";
+import axios from 'axios';
 
 import("./style/reset.css");
 import("./style/App.css");
@@ -19,16 +18,20 @@ export default function App() {
 
   useEffect(() => {
     async function fetchBlogs() {
-      let url = `http://localhost:3000/bdd`;
-
-      const response = await fetch(url);
-      const dataJson = await response.json();
-      // console.log(dataJson);
-      setData(dataJson)
+      let url = 'http://localhost:3000/bdd';
+  
+      try {
+        const response = await axios.get(url);
+        const dataJson = response.data;
+        setData(dataJson);
+      } catch (error) {
+        console.error("Une erreur s'est produite lors de la requête", error);
+      }
     }
-
+  
     fetchBlogs();
   }, []);
+ 
 
   return (
     <UserContext.Provider value={{ data, setData }} >
