@@ -17,7 +17,6 @@ import("./style/profile.css");
 
 export default function App() {
   const [data, setData] = useState(database)
-  const { currentUser } = database;
   return (
     <UserContext.Provider value={{ data, setData }} >
       <Layout>
@@ -27,7 +26,7 @@ export default function App() {
               <Route index element={<Tweets />} />
             </Route>
             <Route
-              path={`/${currentUser[0].author.username}`}
+              path={`/${data.currentUser[0].author.username}`}
               element={<Profile />}
             />
             <Route path=":username" element={<ProfilePost />} />
