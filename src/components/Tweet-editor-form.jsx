@@ -19,43 +19,47 @@ export default function TweetEditorForm() {
     const [text, setText] = useState('');
     const { data, setData } = useContext(UserContext);
 
-    // Cloner le tableau des tweets du contexte
-const updatedData = [...data.tweets];
 // créer une fonction d'ajout des tweets
 function addTweets() {
-  // récupérer les infos de currentUser
-  const currentUserInfo = data.currentUser[0];
-
-  // créer un nouveau tweet
-  const newTweet = {
-    id: (updatedData.length + 1).toString(),
-    author: {
-      id: currentUserInfo.author.id,
-      avatar: currentUserInfo.author.avatar,
-      username: currentUserInfo.author.username,
-      name: currentUserInfo.author.name,
-      tag: currentUserInfo.author.tag,
-    },
-    date: "maintenant", // Vous devrez définir la date réelle ici
-    content: text,
-    image: "",
-    reply: "0",
-    repost: "0",
-    like: "0",
-    bio: currentUserInfo.bio,
-    islike: false,
-  };
-
-
-  //   // Ajouter le nouveau tweet à la liste de tweets
-  updatedData.unshift(newTweet);
-  setData({ ...data, tweets: updatedData });
-  setText('');
-
-
-  //   // Afficher la base de données mise à jour
-  console.log(updatedData);
-
+    // / Vérifier que data et data.tweets existent
+  if (data && data.tweets) {
+     // Cloner le tableau des tweets du contexte
+     const updatedData = [...data.tweets];
+     // récupérer les infos de currentUser
+     const currentUserInfo = data.currentUser[0];
+   
+     // créer un nouveau tweet
+     const newTweet = {
+       id: (updatedData.length + 1).toString(),
+       author: {
+         id: currentUserInfo.author.id,
+         avatar: currentUserInfo.author.avatar,
+         username: currentUserInfo.author.username,
+         name: currentUserInfo.author.name,
+         tag: currentUserInfo.author.tag,
+       },
+       date: "maintenant", // Vous devrez définir la date réelle ici
+       content: text,
+       image: "",
+       reply: "0",
+       repost: "0",
+       like: "0",
+       bio: currentUserInfo.bio,
+       islike: false,
+     };
+   
+   
+     //   // Ajouter le nouveau tweet à la liste de tweets
+     updatedData.unshift(newTweet);
+     setData({ ...data, tweets: updatedData });
+     setText('');
+   
+   
+     //   // Afficher la base de données mise à jour
+     console.log(updatedData);
+   
+  }
+   
 }
 
 

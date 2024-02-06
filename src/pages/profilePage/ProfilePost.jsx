@@ -13,10 +13,11 @@ import UserContext from "../../context/UserContext";
 function ProfilePostDetails() {
 
   const { username } = useParams();
-  const user = useContext(UserContext);
+   const { data } = useContext(UserContext)
+
   // const Post = user.data.tweet.find((e) => e.authorName === authorName);
   // console.log(Post);
-  const Post = user.data.tweets.filter((e) => e.author.username === username);
+  const Post = data.tweets.filter((e) => e.author.username === username);
   const filterName = Post
 
   const postlength = Post.length

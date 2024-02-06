@@ -7,8 +7,7 @@ import database from "./data.json";
 import Tweets from "./components/Tweets.jsx";
 import ProfilePost from "./pages/profilePage/ProfilePost.jsx";
 import UserContext from "./context/UserContext.js";
-import { useState } from "react";
-// import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import("./style/reset.css");
 import("./style/App.css");
@@ -16,7 +15,21 @@ import("./style/sidestyle.css");
 import("./style/profile.css");
 
 export default function App() {
-  const [data, setData] = useState(database)
+  const [data, setData] = useState(null)
+
+  useEffect(() => {
+    async function fetchBlogs() {
+      let url = `http://localhost:3000/bdd`;
+
+      const response = await fetch(url);
+      const dataJson = await response.json();
+      // console.log(dataJson);
+      setData(dataJson)
+    }
+
+    fetchBlogs();
+  }, []);
+
   return (
     <UserContext.Provider value={{ data, setData }} >
       <Layout>
@@ -26,8 +39,8 @@ export default function App() {
               <Route index element={<Tweets />} />
             </Route>
             <Route
-              path={`/${data.currentUser[0].author.username}`}
-              element={<Profile />}
+              path={`/${data?.currentUser?.author?.username}`}
+               element={<Profile />}
             />
             <Route path=":username" element={<ProfilePost />} />
           </Routes>

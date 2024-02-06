@@ -7,7 +7,7 @@ export default function Tweets() {
 
     return (
         <>
-            {data.tweets.map((item, index) => {
+            {data?.tweets?.map((item, index) => {
                 return (
                     <Tweet key={index}
                         item={item}

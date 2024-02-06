@@ -1,5 +1,5 @@
 {
-  "currentUser": [
+  "bdd":{"currentUser": 
     {
       "id": "1",
       "author": {
@@ -19,8 +19,7 @@
       "like": "184",
       "bio": "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps",
       "islike": false
-    }
-  ],
+    },
   "tweets": [
     {
       "id": "1",
@@ -112,5 +111,5 @@
       "bio": "what's happening?!",
       "islike": false
     }
-  ]
+  ]}
 }

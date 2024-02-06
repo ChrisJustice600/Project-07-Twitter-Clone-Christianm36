@@ -14,7 +14,7 @@ function ButtonTwitter() {
 
 
 export default function SideNav() {
-  const { currentUser } = database;
+  const { currentUser } = database.bdd;
   // navItems
   const navItems = [
     { icon: "src/iconSide/home.svg", link: "Home", path: "/home" },
@@ -23,7 +23,7 @@ export default function SideNav() {
     { icon: "src/iconSide/message.svg", link: "Message", path: "" },
     { icon: "src/iconSide/bookmarks.svg", link: "Bookmarks", path: "" },
     { icon: "src/iconSide/list.png", link: "Lists", path: "" },
-    { icon: "src/iconSide/profile.png", link: "Profile", path: `/${currentUser[0].author.username}` },
+    { icon: "src/iconSide/profile.png", link: "Profile", path: `/${currentUser.author.username}` },
     { icon: "src/iconSide/more.png", link: "More", path: "" },
   ];
 
