@@ -1,5 +1,5 @@
 {
-  "bdd":{"currentUser": 
+  "currentUser": 
     {
       "id": "1",
       "author": {
@@ -111,5 +111,5 @@
       "bio": "what's happening?!",
       "islike": false
     }
-  ]}
+  ]
 }

@@ -11,10 +11,10 @@ import Tweet from "../../components/tweet";
 
 
 function ProfileDetails() {
-  const { data } = useContext(UserContext)
+  const { data, current } = useContext(UserContext)
 
-  const profileData = data.currentUser.author
-  const profileuser = data.currentUser.author.username
+  const profileData = current.currentUser.author
+  const profileuser = current.currentUser.author.username
   const Post = data.tweets.filter((e) => e.author.username === profileuser);
   // console.log(Post);
   // const filterName = Post

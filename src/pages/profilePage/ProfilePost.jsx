@@ -17,7 +17,7 @@ function ProfilePostDetails() {
 
   // const Post = user.data.tweet.find((e) => e.authorName === authorName);
   // console.log(Post);
-  const Post = data.tweets.filter((e) => e.author.username === username);
+  const Post = data.filter((e) => e.author.username === username);
   const filterName = Post
 
   const postlength = Post.length

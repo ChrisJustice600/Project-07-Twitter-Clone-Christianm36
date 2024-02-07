@@ -15,26 +15,46 @@ import("./style/profile.css");
 
 export default function App() {
   const [data, setData] = useState(null)
+  const [current, setCurrent] = useState(null)
+  console.log(data);
 
   useEffect(() => {
-    async function fetchBlogs() {
-      let url = 'http://localhost:3000/bdd';
+    async function fetchData() {
+      let url = 'http://localhost:3000/tweets';
   
       try {
         const response = await axios.get(url);
         const dataJson = response.data;
+        console.log(dataJson);
         setData(dataJson);
       } catch (error) {
         console.error("Une erreur s'est produite lors de la requête", error);
       }
     }
   
-    fetchBlogs();
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    async function fetchCurrentUser() {
+      let url = 'http://localhost:3000/currentUser';
+  
+      try {
+        const response = await axios.get(url);
+        const currentJson = response.data;
+        console.log(currentJson);
+        setCurrent(currentJson);
+      } catch (error) {
+        console.error("Une erreur s'est produite lors de la requête", error);
+      }
+    }
+  
+    fetchCurrentUser();
   }, []);
  
 
   return (
-    <UserContext.Provider value={{ data, setData }} >
+    <UserContext.Provider value={{ data, setData,current }} >
       <Layout>
         <BrowserRouter>
           <Routes>
@@ -42,7 +62,7 @@ export default function App() {
               <Route index element={<Tweets />} />
             </Route>
             <Route
-              path={`/${data?.currentUser?.author?.username}`}
+              path={`/${current?.currentUser?.author?.username}`}
                element={<Profile />}
             />
             <Route path=":username" element={<ProfilePost />} />

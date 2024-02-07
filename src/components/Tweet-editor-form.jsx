@@ -6,6 +6,7 @@ import Image5 from "../images/Schedule (1).svg";
 import { useState } from "react";
 import { useContext } from "react";
 import UserContext from "../context/UserContext";
+import axios from "axios";
 
 const Image = ({ src }) => {
     return (
@@ -17,8 +18,7 @@ const Image = ({ src }) => {
 
 export default function TweetEditorForm() {
     const [text, setText] = useState('');
-    const { data, setData } = useContext(UserContext);
-
+    const { data, setData, current } = useContext(UserContext);
     // créer une fonction d'ajout des tweets
     function addTweets() {
         // / Vérifier que data et data.tweets existent
@@ -26,7 +26,7 @@ export default function TweetEditorForm() {
             // Cloner le tableau des tweets du contexte
             const updatedData = [...data.tweets];
             // récupérer les infos de currentUser
-            const currentUserInfo = data.currentUser[0];
+            const currentUserInfo = current.currentUser;
 
             // créer un nouveau tweet
             const newTweet = {
@@ -48,13 +48,35 @@ export default function TweetEditorForm() {
                 islike: false,
             };
 
-            updatedData.unshift(newTweet);
-            setData({ ...data, tweets: updatedData });
-            setText('');
+            // updatedData.unshift(newTweet);
+            // setData({ ...data, tweets: updatedData });
+            // setText('');
 
 
-            //   // Afficher la base de données mise à jour
-            console.log(updatedData);
+            // //   // Afficher la base de données mise à jour
+            // console.log(updatedData);
+            // Effectuer une requête POST avec Axios
+            //   axios.post('/user', {
+            //     firstName: 'Fred',
+            //     lastName: 'Flintstone'
+            //   })
+            //   .then(function (response) {
+            //     console.log(response);
+            //   })
+            //   .catch(function (error) {
+            //     console.log(error);
+            //   });
+            axios.post('http://localhost:3000/bdd/tweets', newTweet)
+                .then(response => {
+                    // Mettre à jour le contexte avec les nouveaux tweets
+                    // setData({ ...data, tweets: [response.data, ...data.tweets] });
+                    // setText('');
+                    // console.log('Nouveau tweet ajouté avec succès !');
+                    console.log(response.data);
+                })
+                .catch(error => {
+                    console.error("Une erreur s'est produite lors de la requête POST", error);
+                });
 
         }
 

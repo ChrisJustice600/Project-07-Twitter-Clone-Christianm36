@@ -4,10 +4,11 @@ import React, { useContext } from "react";
 
 export default function Tweets() {
     const { data } = useContext(UserContext);
+    console.log(data);
 
     return (
         <>
-            {data?.tweets?.map((item, index) => {
+            {data?.map((item, index) => {
                 return (
                     <Tweet key={index}
                         item={item}
