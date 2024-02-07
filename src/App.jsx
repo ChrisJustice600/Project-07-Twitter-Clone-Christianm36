@@ -25,8 +25,8 @@ export default function App() {
       try {
         const response = await axios.get(url);
         const dataJson = response.data;
-        console.log(dataJson);
-        setData(dataJson);
+        // console.log(dataJson); 
+        setData(dataJson.reverse());
       } catch (error) {
         console.error("Une erreur s'est produite lors de la requête", error);
       }

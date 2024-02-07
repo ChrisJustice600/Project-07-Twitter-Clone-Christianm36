@@ -1,25 +1,24 @@
 {
-  "currentUser": 
-    {
-      "id": "1",
-      "author": {
-        "id": "chrisjusticem",
-        "avatar": "mon-profile.png",
-        "username": "ChrisJusticeM",
-        "name": "ChrisJusticeM",
-        "tag": "@ChrisJusticeM",
-        "following": "0",
-        "follower": "0"
-      },
-      "date": "7min",
-      "content": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
-      "image": "",
-      "reply": "19",
-      "repost": "144",
-      "like": "184",
-      "bio": "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps",
-      "islike": false
+  "currentUser": {
+    "id": "1",
+    "author": {
+      "id": "chrisjusticem",
+      "avatar": "mon-profile.png",
+      "username": "ChrisJusticeM",
+      "name": "ChrisJusticeM",
+      "tag": "@ChrisJusticeM",
+      "following": "0",
+      "follower": "0"
     },
+    "date": "7min",
+    "content": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
+    "image": "",
+    "reply": "19",
+    "repost": "144",
+    "like": "184",
+    "bio": "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps",
+    "islike": false
+  },
   "tweets": [
     {
       "id": "1",
@@ -109,6 +108,42 @@
       "repost": "99",
       "like": "22",
       "bio": "what's happening?!",
+      "islike": false
+    },
+    {
+      "id": "6",
+      "author": {
+        "id": "chrisjusticem",
+        "avatar": "mon-profile.png",
+        "username": "ChrisJusticeM",
+        "name": "ChrisJusticeM",
+        "tag": "@ChrisJusticeM"
+      },
+      "date": "maintenant",
+      "content": "herbvd",
+      "image": "",
+      "reply": "0",
+      "repost": "0",
+      "like": "0",
+      "bio": "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps",
+      "islike": false
+    },
+    {
+      "id": "7",
+      "author": {
+        "id": "chrisjusticem",
+        "avatar": "mon-profile.png",
+        "username": "ChrisJusticeM",
+        "name": "ChrisJusticeM",
+        "tag": "@ChrisJusticeM"
+      },
+      "date": "maintenant",
+      "content": "uveuivie",
+      "image": "",
+      "reply": "0",
+      "repost": "0",
+      "like": "0",
+      "bio": "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps",
       "islike": false
     }
   ]

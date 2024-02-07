@@ -19,15 +19,15 @@ const Image = ({ src }) => {
 export default function TweetEditorForm() {
     const [text, setText] = useState('');
     const { data, setData, current } = useContext(UserContext);
+    console.log(data);
     // créer une fonction d'ajout des tweets
     function addTweets() {
         // / Vérifier que data et data.tweets existent
-        if (data && data.tweets) {
+        if (data) {
             // Cloner le tableau des tweets du contexte
-            const updatedData = [...data.tweets];
+            const updatedData = [...data];
             // récupérer les infos de currentUser
-            const currentUserInfo = current.currentUser;
-
+            const currentUserInfo = current;
             // créer un nouveau tweet
             const newTweet = {
                 id: (updatedData.length + 1).toString(),
@@ -66,17 +66,18 @@ export default function TweetEditorForm() {
             //   .catch(function (error) {
             //     console.log(error);
             //   });
-            axios.post('http://localhost:3000/bdd/tweets', newTweet)
-                .then(response => {
-                    // Mettre à jour le contexte avec les nouveaux tweets
-                    // setData({ ...data, tweets: [response.data, ...data.tweets] });
-                    // setText('');
-                    // console.log('Nouveau tweet ajouté avec succès !');
-                    console.log(response.data);
-                })
-                .catch(error => {
-                    console.error("Une erreur s'est produite lors de la requête POST", error);
-                });
+            axios.post('http://localhost:3000/tweets', newTweet)
+            .then(response => {
+                // Mettre à jour le contexte avec les nouveaux tweets
+                setData(prevData => ({
+                    ...prevData,
+                    tweets: [response.data, ...prevData.tweets],
+                }));
+                setText('');
+            })
+            .catch(error => {
+                console.error("Une erreur s'est produite lors de la requête POST", error);
+            });
 
         }
 
