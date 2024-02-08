@@ -11,14 +11,14 @@ import axios from 'axios';
 import("./style/reset.css");
 import("./style/App.css");
 import("./style/sidestyle.css");
-import("./style/profile.css");
+import("./style/profile.css");  
 
 export default function App() {
   const [data, setData] = useState(null)
   const [current, setCurrent] = useState(null)
   console.log(data);
 
-  useEffect(() => {
+
     async function fetchData() {
       let url = 'http://localhost:3000/tweets';
   
@@ -33,7 +33,7 @@ export default function App() {
     }
   
     fetchData();
-  }, []);
+
 
   useEffect(() => {
     async function fetchCurrentUser() {
@@ -52,6 +52,11 @@ export default function App() {
     fetchCurrentUser();
   }, []);
  
+  useEffect(() => {
+    // Appeler fetchData apres le post réussi
+    fetchData();
+  }, [data]); // dépendance permettra de déclencher le rappel après le post
+
 
   return (
     <UserContext.Provider value={{ data, setData,current }} >
