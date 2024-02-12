@@ -18,8 +18,8 @@ const Image = ({ src }) => {
 
 export default function TweetEditorForm() {
     const [text, setText] = useState('');
-    const { data, setData, current} = useContext(UserContext);
-    console.log(data);
+    const { data, setReverse, current, reverse } = useContext(UserContext);
+    // console.log(data);
     // créer une fonction d'ajout des tweets
     function addTweets() {
         // / Vérifier que data et data.tweets existent
@@ -67,29 +67,18 @@ export default function TweetEditorForm() {
             //     console.log(error);
             //   });
             axios.post('http://localhost:3000/tweets', newTweet)
-        .then(response => {
-            // Mettre à jour le contexte avec les nouveaux tweets
-            setData(prevData => {
-            if (!prevData) {
-                return prevData;
-            }
+                .then(response => {
+                    // Mettre à jour le contexte avec les nouveaux tweets
+                    setReverse(!reverse)
 
-            // Cloner le tableau des tweets du contexte
-            const updatedData = [...prevData];
-            // Ajouter le nouveau tweet au début du tableau
-            updatedData.unshift(response.data);
-
-            return updatedData;
-        });
-
-    // Effacer le texte du tweet après un post réussi
-    setText('');
-    // Afficher les détails du tweet posté
-    console.log('Nouveau tweet ajouté avec succès !', response.data);
-  })
-  .catch(error => {
-    console.error("Une erreur s'est produite lors de la requête POST", error);
-  });
+                    // Effacer le texte du tweet après un post réussi
+                    setText('');
+                    // Afficher les détails du tweet posté
+                    console.log('Nouveau tweet ajouté avec succès !', response.data);
+                })
+                .catch(error => {
+                    console.error("Une erreur s'est produite lors de la requête POST", error);
+                });
 
         }
 

@@ -16,24 +16,25 @@ import("./style/profile.css");
 export default function App() {
   const [data, setData] = useState(null)
   const [current, setCurrent] = useState(null)
-  console.log(data);
+  const [reverse, setReverse] = useState(false)
 
-
-    async function fetchData() {
-      let url = 'http://localhost:3000/tweets';
-  
-      try {
-        const response = await axios.get(url);
-        const dataJson = response.data;
-        // console.log(dataJson); 
-        setData(dataJson.reverse());
-      } catch (error) {
-        console.error("Une erreur s'est produite lors de la requête", error);
+    useEffect(() => {
+      // Appeler fetchData apres le post réussi
+      async function fetchData() {
+        let url = 'http://localhost:3000/tweets';
+    
+        try {
+          const response = await axios.get(url);
+          const dataJson = response.data;
+          // console.log(dataJson); 
+          setData(dataJson.reverse());
+        } catch (error) {
+          console.error("Une erreur s'est produite lors de la requête", error);
+        }
       }
-    }
+      fetchData();
+    }, [reverse]); // dépendance permettra de déclencher le rappel après le post
   
-    fetchData();
-
 
   useEffect(() => {
     async function fetchCurrentUser() {
@@ -52,14 +53,9 @@ export default function App() {
     fetchCurrentUser();
   }, []);
  
-  useEffect(() => {
-    // Appeler fetchData apres le post réussi
-    fetchData();
-  }, [data]); // dépendance permettra de déclencher le rappel après le post
-
 
   return (
-    <UserContext.Provider value={{ data, setData,current }} >
+    <UserContext.Provider value={{ data, setData,current, setReverse, reverse }} >
       <Layout>
         <BrowserRouter>
           <Routes>
