@@ -40,7 +40,7 @@ export default function LikeAction({ item }) {
           name: item.author.name,
           tag: item.author.tag,
         },
-        date: "maintenant",
+        date: item.date,
         content: item.content,
         image: "",
         reply: item.reply,
