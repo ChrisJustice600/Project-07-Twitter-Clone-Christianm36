@@ -4,7 +4,6 @@ import React, { useContext } from "react";
 
 export default function Tweets() {
     const { data } = useContext(UserContext);
-    console.log(data);
 
     return (
         <>

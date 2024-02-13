@@ -41,7 +41,6 @@ export default function App() {
       try {
         const response = await axios.get(url);
         const currentJson = response.data;
-        console.log(currentJson);
         setCurrent(currentJson);
       } catch (error) {
         console.error("Une erreur s'est produite lors de la requête", error);
