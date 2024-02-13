@@ -29,14 +29,14 @@
         "name": "CNN",
         "tag": "@cnn"
       },
-      "date": "7min",
+      "date": "maintenant",
       "content": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
       "image": "",
       "reply": "19",
       "repost": "144",
       "like": "184",
       "bio": "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps",
-      "islike": false
+      "islike": true
     },
     {
       "id": "2",
@@ -59,24 +59,6 @@
     {
       "id": "3",
       "author": {
-        "id": "cnn",
-        "avatar": "tweet-profile-photo.png",
-        "username": "cnn",
-        "name": "CNN",
-        "tag": "@cnn"
-      },
-      "date": "7min",
-      "content": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
-      "image": "",
-      "reply": "19",
-      "repost": "144",
-      "like": "184",
-      "bio": "It’s our job to #GoThere & tell the most difficult stories. For breaking news, follow @CNNBRK and download our app http://cnn.com/apps",
-      "islike": false
-    },
-    {
-      "id": "4",
-      "author": {
         "id": "tweeter",
         "avatar": "image 1.png",
         "username": "tweeter",
@@ -93,7 +75,7 @@
       "islike": false
     },
     {
-      "id": "5",
+      "id": "4",
       "author": {
         "id": "tweeter",
         "avatar": "image 1.png",
