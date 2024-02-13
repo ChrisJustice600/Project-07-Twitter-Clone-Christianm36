@@ -19,16 +19,11 @@ const Image = ({ src }) => {
 export default function TweetEditorForm() {
     const [text, setText] = useState('');
     const { data, setReverse, current, reverse } = useContext(UserContext);
-    // console.log(data);
-    // créer une fonction d'ajout des tweets
+    
     function addTweets() {
-        // / Vérifier que data et data.tweets existent
         if (data) {
-            // Cloner le tableau des tweets du contexte
             const updatedData = [...data];
-            // récupérer les infos de currentUser
             const currentUserInfo = current;
-            // créer un nouveau tweet
             const newTweet = {
                 id: (updatedData.length + 1).toString(),
                 author: {
@@ -48,32 +43,10 @@ export default function TweetEditorForm() {
                 islike: false,
             };
 
-            // updatedData.unshift(newTweet);
-            // setData({ ...data, tweets: updatedData });
-            // setText('');
-
-
-            // //   // Afficher la base de données mise à jour
-            // console.log(updatedData);
-            // Effectuer une requête POST avec Axios
-            //   axios.post('/user', {
-            //     firstName: 'Fred',
-            //     lastName: 'Flintstone'
-            //   })
-            //   .then(function (response) {
-            //     console.log(response);
-            //   })
-            //   .catch(function (error) {
-            //     console.log(error);
-            //   });
             axios.post('http://localhost:3000/tweets', newTweet)
                 .then(response => {
-                    // Mettre à jour le contexte avec les nouveaux tweets
                     setReverse(!reverse)
-
-                    // Effacer le texte du tweet après un post réussi
                     setText('');
-                    // Afficher les détails du tweet posté
                     console.log('Nouveau tweet ajouté avec succès !', response.data);
                 })
                 .catch(error => {
